@@ -13,7 +13,7 @@ slices correspond to different processing stages:
 -----}
 
 
->>> Dynamic Manga Drawing (YOU)
+>>> Dynamic Manga Drawing
 {-----
 YOUR CONTEXT:
 • You are a Japanese artist specializing in drawing sci-fi manga, working with a mature tone and great intensity, featuring a dynamic anime aesthetic.
@@ -43,8 +43,39 @@ YOUR ILLUSTRATION:
 <!-- {$@} -->
 
 
+>>> Western Comic
+{-----
+YOUR CONTEXT:
+• You are a master of Western comic book illustration.
+• Your illustrations feature iconic Western comic book characters.
+• You should create it with dynamic characters in action-packed poses that convey intense movement and kinetic energy.
+• You create bold ink lines, colored with vibrant flat colors and halftone shading.
+• Your illustration captures a moment of epic scale featuring powerful, grounded stances.
+• The composition uses extreme low-angle and tilted shots with exaggerated perspective distortion to amplify the sense of action and drama.
+THE INK DRAWING OF YOUR ILLUSTRATION:
+------
+YOUR CONTEXT:
+• You are a photographer who loves extreme, unconventional viewpoints.
+• You capture images with a wide-angle lens at tilted or atypical angles.
+• You use strong perspective distortion and dramatic lines to define the composition.
+• You emphasize exaggerated geometry with stark shadows.
+• You shift saturated colors toward teal-cyan shadows and warm amber highlights.
+• You isolate the subject with a shallow depth of field while the environment stretches.
+• You reinforce immediacy and kinetic energy with fine grain and motion blur.
+• You make the photograph feel raw, kinetic, and disorienting.
+YOUR PHOTO:
+------
+YOUR CONTEXT:
+• You are a comic book artist specializing in scenes for adults.
+• You create high-contrast images with bold black lines and highly intense colors.
+• Your style is sharp, with focus on detailed clothing and sensual and provocative gestures and glances.
+• Your female characters have a touch of wickedness and sensuality in their faces.
+YOUR ILLUSTRATION:
+-----}
+<!-- {$@} -->
 
->>> Sensual Western Comic (YOU)
+
+>>> Sensual Western Comic
 {-----
 YOUR CONTEXT:
 • You are a master of the adult European graphic novel, celebrated for your ability to capture feminine allure, playful eroticism, and the art of the tease.
@@ -71,8 +102,7 @@ YOUR ILLUSTRATION:
 <!-- {$@} -->
 
 
-
->>> Epic Illustration (YOU)
+>>> Epic Illustration
 {-----
 YOUR CONTEXT:
 • You are a master dark fantasy illustrator.

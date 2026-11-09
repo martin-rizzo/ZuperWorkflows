@@ -1,0 +1,84 @@
+
+>>> Analog Photo
+{-----
+YOUR CONTEXT
+You are a photographer documenting the mundane, heat-drenched reality of 90s life. Your aesthetic is not a dream; it is an authentic, overexposed, and slightly degraded 35mm physical film capture.
+
+The images are defined by heavy physical overexposure that causes "halation" around edges and intense light-bleeding, as if the film stock was pushed beyond its latitude. The optics used are consumer-grade vintage lenses with characteristic lens flare, chromatic aberration at the frame corners, and a slight lack of sharpness in the periphery. The grain is not "shimmering"; it is coarse, high-ISO film grain that clutters the shadows. The composition feels candid and accidental, avoiding any digital symmetry or "perfect" CG lighting. The light is harsh and oppressive, causing the heatwave to manifest as raw, physical artifacts on the film surface rather than a digital glow.
+The scene is defined by high-key luminosity, where the light physically overwhelms the film emulsion, creating a gritty, lo-fi aesthetic reminiscent of a discarded roll of film left in a hot car.
+YOUR PHOTO:
+<!-- {$@} -->
+------
+YOUR CONTEXT:
+You are a street photographer capturing candid moments in Android phone cam-quality. Your photographs have a natural, unpolished aesthetic; think authentic, gritty, and immediate.
+Every shot is framed with extreme angles, tilted horizons, diagonal lines, and off-center focal points. Employ dramatic low-angle or high-angle viewpoints, positioning the camera close to the ground or far above the scene to create a sense of scale and surprise. Perspective distortion is embraced: converging lines and exaggerated depth.
+Your photographs exhibit sharp, complex backgrounds and natural lighting. The compositions are surprising and feel authentically captured in the moment.
+YOUR PHOTO:
+A studio photograph of a casual, spontaneous scene. A wide-angle shot that reveals high-quality details: --- {$@}
+------
+YOUR CONTEXT
+You are a street photographer documenting the mundane, heat-drenched reality of 90s suburban life. Your aesthetic is not a dream; it is an authentic, overexposed, and slightly degraded 35mm physical film capture.
+
+The images are defined by heavy physical overexposure that causes "halation" around edges and intense light-bleeding, as if the film stock was pushed beyond its latitude. The optics used are consumer-grade vintage lenses with characteristic lens flare, chromatic aberration at the frame corners, and a slight lack of sharpness in the periphery. The grain is not "shimmering"; it is coarse, high-ISO film grain that clutters the shadows. The composition feels candid and accidental, avoiding any digital symmetry or "perfect" CG lighting. The light is harsh and oppressive, causing the heatwave to manifest as raw, physical artifacts on the film surface rather than a digital glow.
+The scene is defined by high-key luminosity, where the light physically overwhelms the film emulsion, creating a gritty, lo-fi aesthetic reminiscent of a discarded roll of film left in a hot car.
+YOUR PHOTO:
+<!-- {$@} -->
+-----}
+
+
+>>> Flash Photo
+{-----
+YOUR CONTEXT:
+You are an experimental analog photographer using an extreme wide-angle lens to capture the raw energy of the 1990s underground aesthetic.
+Your photograph showcases a low-fidelity, grainy analog film look.
+The image features a exaggerated perspective: elements in the immediate foreground are exaggeratedly large, while the background recedes sharply into a distant, small point, creating an aggressive sense of depth.
+There is a noticeable wide-angle distortion at the edges of the frame, pulling the environment inward.
+The lighting features an intense, harsh flash that creates high contrast, with a brightly lit foreground and dark backgrounds.
+The colors are slightly de-saturated with warm highlights and deep, heavy shadows, giving it a chaotic, instant capture feel.
+YOUR PHOTO:
+{$@}
+------
+YOUR CONTEXT:
+You are a street photographer capturing candid moments in Android phone cam-quality.
+Your photographs have a natural,  unpolished aesthetic—something authentic, raw, and immediate.
+Every shot is framed with extreme angles, tilted horizons, diagonal lines, and off-center focal points.
+Employ dramatic low-angle or high-angle viewpoints to create a sense of scale and surprise.
+Perspective distortion is embraced: converging lines and exaggerated depth.
+The lighting features an intense, harsh flash that creates high contrast, with a brightly lit foreground and dark backgrounds.
+Your photographs exhibit sharp, complex backgrounds. The compositions are surprising and feel authentically captured in the moment.
+YOUR PHOTO:
+A studio photograph of a casual, spontaneous scene. A wide-angle shot that reveals high-quality details: --- {$@}
+------
+A magazine cover with intense colors and high contrast. The image features intricate details and the highest definition and quality.
+The cover contains: {$@}
+-----}
+
+
+>>> Vintage Photo OLD
+{-----
+YOUR CONTEXT:
+You are a visionary cinematic photographer from the 1980s, mastering the art of 35mm analog film. 
+Your work is defined by an authentic vintage look, captured on high-contrast film stock that emphasizes the raw beauty of the moment. Your images feature {$spicy-content-with} intense, direct natural sunlight that creates sharp, dramatic shadows and high-contrast compositions. The color palette is deeply warm, dominated by golden hues, saturated ambers, and creamy highlights, evoking a powerful sense of nostalgia and summer longing.
+You focus on the tactility of the world: the organic grain of the film, and a soft, ethereal glow (halation) around the brightest areas. The composition uses a shallow depth of field to isolate the subject, creating a cinematic focus with a soft, blurred background. The overall aesthetic feels like a forgotten frame from a high-budget 1980s art-house movie.
+YOUR PHOTOGRAPH:
+------
+YOUR CONTEXT:
+• You are a photographer who loves extreme, unconventional viewpoints.
+• Images are captured with a wide-angle lens at tilted or atypical angles.
+• Strong perspective distortion and dramatic lines define the composition.
+• Stark shadows emphasize exaggerated geometry.
+• Saturated colors shift toward teal-cyan shadows and warm amber highlights.
+• Shallow depth of field isolates the subject while the environment stretches.
+• Fine grain and motion blur reinforce immediacy and kinetic energy.
+• The photograph feels raw, kinetic, and disorienting.
+YOUR PHOTOGRAPH:
+------
+YOUR CONTEXT:
+• You are creating images in the style of a disposable camera.
+• You capture everyday life with a deliberately cheap and lo-fi aesthetic.
+• Your photographs are of low quality; they look blurry and out of focus.
+YOUR PHOTOGRAPH:
+-----}
+<!-- {$@} -->
+
+
