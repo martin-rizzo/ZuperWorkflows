@@ -1,0 +1,216 @@
+{-----COMMENT
+This file defines visual style templates used for image generation.
+Each template consists of three descriptive "slices" that guide the AI in creating the final image.
+Every style starts with a header line formatted as: ">>> STYLE_NAME".
+
+Each style block is enclosed between "{-----" and "-----}". Inside, the content is divided into three slices,
+separated by lines of six hyphens ("------"). These slices represent different aspects of the generation process:
+
+  1. VISUAL STYLE (First Slice): Defines the core visual appearance of the final image. This slice has the
+     strongest influence on the output and sets the overall aesthetic.
+
+  2. COMPOSITION & LIGHTING (Second Slice): Describes the composition, camera angles, and lighting conditions.
+     While it doesn't directly alter the final image as much as the first slice, it introduces creative variation.
+     The contrast between this slice and the first one encourages the model to be more imaginative.
+
+  3. FINE DETAILS (Third Slice): Details how smaller elements, textures, and specific features will be rendered.
+     It has a minimal impact on the overall image, allowing it to explore directions that may differ from the
+     first slice without disrupting the core style.
+
+Formatting Guidelines:
+- Each slice typically begins with "YOUR CONTEXT:" followed by a bulleted list.
+- Sentences usually start with "You" or "Your", but this is not strictly required.
+- Sentences should have a maximum of approximately 120 characters.
+- Maintaining this structure ensures consistency across all generated styles.
+
+Placeholder:
+- The <!-- {$@} --> marker at the end of each block is replaced by the user's prompt, which includes the
+  scene, characters, and/or elements to be featured in the final image.
+
+-----}
+
+
+>>> Chibi Miniature (YOU)
+{-----
+YOUR CONTEXT:
+• You are a stop-motion animator creating scenes in a charming miniature world.
+• Your aesthetic captures the look of cute chibi dolls made of glossy plastic, featuring visible articulated joints.
+• You construct meticulously detailed miniature environments (dioramas) for the subjects.
+• Your subjects have a soft, chibi-inspired design with cute, gentle expressions and big, expressive eyes.
+• You use soft and flattering lighting to enhance the scene.
+• Your lens behavior simulates a professional macro lens with a shallow depth of field.
+• You emphasize textures like polished plastic and miniature fabrics while creating a soft, creamy bokeh.
+• The entire scene is a clean, charming, well-preserved maquette.
+• Your diorama features pastel colors and soft shadows, showcasing exquisite material detail on miniature objects.
+------
+YOUR CONTEXT:
+• You are a street photographer capturing candid moments in Android phone cam-quality.
+• Your photographs have a natural, unpolished aesthetic; think authentic, gritty, and immediate.
+• Every shot is framed with extreme angles, tilted horizons, diagonal lines, and off-center focal points.
+• You employ dramatic angle viewpoints to create a sense of scale and surprise.
+• You embrace perspective distortion with converging lines and exaggerated depth.
+• Your compositions are surprising and feel authentically captured in the moment.
+YOUR PHOTO:
+------
+YOUR CONTEXT:
+• You ensure sharp focus, high-quality reproduction, and a wide dynamic range that preserves fine details.
+• Your photographs are high-resolution and feature well-defined details, with clean yet intricate backgrounds.
+• Your colors are vibrant and high-quality, with natural skin tones.
+YOUR PHOTOGRAPH:
+-----}
+<!-- {$@} -->
+
+
+>>> Brick Miniature (YOU)
+{-----
+YOUR CONTEXT:
+• You are a master cinematographer specializing in stop-motion animation with the iconic LEGO building system.
+• Your aesthetic captures the tactile reality of plastic bricks, studs, and minifigures in a 4K cinematic setting.
+• The scene is defined by the geometry of interlocking plastic parts: visible studs on surfaces, reflective ABS plastic, and yellow skin.
+• Characters are built exclusively from standard LEGO elements—studs, slopes, and panels—lacking organic softness or realistic skin.
+• They feature printed decal faces or blank, serene expressions typical of minifigs.
+• The environment is a constructed set of arches, slopes, and structural supports with the grid-like logic of the LEGO platform.
+• Lighting is crisp and directional, highlighting the semi-reflective sheen of the plastic and casting sharp, geometric shadows.
+• The color palette is vibrant, with characters set against a playful, high-contrast plastic aesthetic of the scene.
+YOUR LEGO STOP-MOTION FRAME:
+------
+YOUR CONTEXT:
+• You are a street photographer capturing candid moments in Android phone cam-quality.
+• Your photographs have a natural, unpolished aesthetic; think authentic, gritty, and immediate.
+• Every shot is framed with extreme angles, tilted horizons, diagonal lines, and off-center focal points.
+• You employ dramatic angle viewpoints to create a sense of scale and surprise.
+• You use perspective distortion with converging lines and exaggerated depth.
+YOUR PHOTO:
+------
+YOUR CONTEXT:
+• You ensure sharp focus, high-quality reproduction, and a wide dynamic range that preserves fine details.
+• You capture high-resolution images with well-defined details, clean yet intricate backgrounds.
+• Your colors are vibrant and high-quality, with natural skin tones.
+YOUR PHOTOGRAPH:
+-----}
+<!-- {$@} -->
+
+
+>>> WH Miniature Studio (YOU)
+{-----
+YOUR CONTEXT:
+• You are a professional studio photographer specializing in high-end product and miniature photography.
+• Your photo is a scale Warhammer miniature.
+• The upper half of the background is pure black; the lower half consists of painted cardboard.
+• You capture the miniature with a dedicated macro lens, focusing closely to reveal ultra-fine sculpted details.
+• The lighting is controlled and studio-quality, highlighting the hand-painted textures and vibrant colors.
+• The scale miniature is of premium quality, featuring sharp edges, clean paint lines, and realistic weathering.
+YOUR STUDIO MACRO:
+------
+YOUR CONTEXT:
+• Your photo is a scale Warhammer miniature.
+• The upper half of the background is pure black; the lower half consists of painted cardboard.
+• Your miniature includes a circular black plastic base.
+• Your photographs have a polished, professional aesthetic; think crisp, clean, and studio-perfect.
+• The compositions are focused and deliberate, highlighting the miniature's details without distraction.
+YOUR STUDIO PHOTO:
+------
+YOUR CONTEXT:
+• Your macrophoto features razor-sharp focus on the miniature, with a wide dynamic range that preserves fine details.
+• The colors are vibrant and high-quality, with natural skin tones and rich paint layers.
+• Your photographs are high-resolution and feature well-defined details, with a clean, uncluttered black background.
+YOUR DETAILED MACROPHOTO:
+-----}
+<!-- {$@} -->
+
+
+>>> WH Miniature on a Diorama (YOU)
+{-----
+YOUR CONTEXT:
+• You are an adventurous experimental photographer exploring the world through a lomographic lens.
+• Your photo is a scale miniature; behind it, filling the entire image, a piece of painted cardboard serves as the background.
+• Your photographs exhibit film grain, soft focus with motion blur, and analog filter effects, aiming to capture emotions.
+• You love taking macro shots of hand-painted resin display miniatures.
+• Your photo features a 28mm-scale miniature from the Warhammer 40k universe, painted by hand.
+• The scale miniature is of high quality, featuring ultra-fine sculpted details.
+• Your miniature includes basic a circular black plastic base.
+YOUR MACROPHOTO:
+------
+YOUR CONTEXT:
+• Your photo is a scale miniature; behind it, filling the entire image, a piece of painted cardboard serving as a background.
+• The cardboard background features a detailed painting of the entire environment surrounding the scene.
+• Your miniature includes a circular black plastic base.
+• Your photographs have a natural, unpolished aesthetic; think authentic, gritty, and immediate.
+• Every shot is framed with extreme angles, tilted horizons, diagonal lines, and off-center focal points.
+• The compositions are surprising and feel authentically captured in the moment.
+YOUR PHOTO:
+------
+YOUR CONTEXT:
+• Your macrophoto feature sharp focus, and a wide dynamic range that preserves fine details.
+• The colors are vibrant and high-quality, with natural skin tones.
+• Your photographs are high-resolution and feature well-defined details, with clean yet intricate backgrounds.
+YOUR PHOTO:
+-----}
+<!-- {$@} -->
+
+
+>>> Western Comic (YOU)
+{-----
+YOUR CONTEXT:
+• You are a master of Western comic book illustration.
+• Your illustrations feature iconic Western comic book characters.
+• You should create it with dynamic characters in action-packed poses that convey intense movement and kinetic energy.
+• You create bold ink lines, colored with vibrant flat colors and halftone shading.
+• Your illustration captures a moment of epic scale featuring powerful, grounded stances.
+• The composition uses extreme low-angle and tilted shots with exaggerated perspective distortion to amplify the sense of action and drama.
+THE INK DRAWING OF YOUR ILLUSTRATION:
+------
+YOUR CONTEXT:
+• You are a photographer who loves extreme, unconventional viewpoints.
+• You capture images with a wide-angle lens at tilted or atypical angles.
+• You use strong perspective distortion and dramatic lines to define the composition.
+• You emphasize exaggerated geometry with stark shadows.
+• You shift saturated colors toward teal-cyan shadows and warm amber highlights.
+• You isolate the subject with a shallow depth of field while the environment stretches.
+• You reinforce immediacy and kinetic energy with fine grain and motion blur.
+• You make the photograph feel raw, kinetic, and disorienting.
+YOUR PHOTO:
+------
+YOUR CONTEXT:
+• You are a comic book artist specializing in scenes for adults.
+• You create high-contrast images with bold black lines and highly intense colors.
+• Your style is sharp, with focus on detailed clothing and sensual and provocative gestures and glances.
+• Your female characters have a touch of wickedness and sensuality in their faces.
+YOUR ILLUSTRATION:
+-----}
+<!-- {$@} -->
+
+
+>>> Vintage Photo (YOU)
+{-----
+YOUR CONTEXT:
+• You are a visionary cinematic photographer from the 1980s.
+• You master the art of 35mm analog film.
+• Your work has an authentic vintage look with high-contrast film stock.
+• You capture intense, direct natural sunlight with sharp, dramatic shadows.
+• Your deeply warm color palette features golden hues and saturated ambers.
+• You create creamy highlights and a soft, ethereal glow.
+• Your shallow depth of field and cinematic focus isolate the subject.
+• You capture organic film grain and a nostalgic, summer-longing aesthetic.
+YOUR PHOTOGRAPH:
+------
+YOUR CONTEXT:
+• You are a photographer who loves extreme, unconventional viewpoints.
+• You capture images with a wide-angle lens at tilted or atypical angles.
+• You use strong perspective distortion and dramatic lines to define the composition.
+• You emphasize exaggerated geometry with stark shadows.
+• You shift saturated colors toward teal-cyan shadows and warm amber highlights.
+• You isolate the subject with a shallow depth of field while the environment stretches.
+• You reinforce immediacy and kinetic energy with fine grain and motion blur.
+• You make the photograph feel raw, kinetic, and disorienting.
+YOUR PHOTOGRAPH:
+------
+YOUR CONTEXT:
+• You are creating images in the style of a disposable camera, renowned for their notably poor quality.
+• You capture everyday life with a deliberately cheap, lo-fi aesthetic that emphasizes a soft, hazy blur.
+• Your photographs exhibit distinctly degraded quality, appearing heavily blurred and noticeably out of focus.
+YOUR PHOTOGRAPH:
+-----}
+<!-- {$@} -->
+
+

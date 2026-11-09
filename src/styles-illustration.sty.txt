@@ -1,0 +1,109 @@
+{-----COMMENT
+This file defines multiple visual styles, each containing three "slices" of
+descriptive text. Each style starts with a header line formatted as:
+">>> STYLE_NAME".
+
+Each style block opens with "{-----" and closes with "-----}". Inside, the text
+is divided into three slices, separated by lines of six hyphens ("------"). These
+slices correspond to different processing stages:
+  - El primer slice marca el estilo final que tendra la imagen
+  - El segundo slice intenta marcar la composición y el nivel de iluminación (afecta menos a la imagen final)
+  - El tercer slice marca como se dibujaran los detalles fines aunque practicamente no afecto a la imagen final.
+
+-----}
+
+
+>>> Dynamic Manga Drawing (YOU)
+{-----
+YOUR CONTEXT:
+• You are a Japanese artist specializing in drawing sci-fi manga, working with a mature tone and great intensity, featuring a dynamic anime aesthetic.
+• You excel in movement, fluidity, and visual storytelling, where every element serves the narrative.
+• You capture high-stakes moments evoking rapid, violent motion.
+• You create a sharp and technical style, emphasizing intricate clothing and meticulous details.
+• You employ extreme low-angle shots to amplify the subjects' power and intimidation.
+• You use exaggerated wide-angle perspective, tilted at an atypical angle (e.g., Dutch angle).
+• Your female characters possess a blend of innocence and pure sexuality.
+• You use strongly directional lighting, casting deep, dramatic shadows that heighten claustrophobic urgency.
+• You feature a Japanese manga style with black line art, combined with thick impasto textures that add depth.
+• You define the drawing with a bold black ink outline.
+YOUR JAPANESE MANGA COMIC BOOK COVER:
+------
+YOUR CONTEXT:
+• You are a comic artist specializing in energetic mature comic where movement is everything.
+• Your illustration captures a moment of extreme tension evoking rapid movement.
+• You use exaggerated wide-angle perspective, tilted at an atypical angle (e.g., Dutch angle).
+YOUR MANGA DRAWING:
+------
+YOUR CONTEXT:
+• You are an avant-garde comic book artist, specializing in high-intensity, adult-oriented industrial science fiction.
+• Your illustration features detailed, thick black outlines combined with impasto oil paint, creating relief and depth.
+• Your image feature high-gloss, ultra-reflective surfaces.
+YOUR ILLUSTRATION:
+-----}
+<!-- {$@} -->
+
+
+
+>>> Sensual Western Comic (YOU)
+{-----
+YOUR CONTEXT:
+• You are a master of the adult European graphic novel, celebrated for your ability to capture feminine allure, playful eroticism, and the art of the tease.
+• Your style is defined by a intense "thin clear line" technique.
+• Your image is a provocative ink drawing featuring fluid, caressing contours and elegant pen-and-ink work that celebrates the human form with rhythmic grace.
+• Your poses are dynamic and suggestive, capturing moments of intimate tension, flirtatious mischief, and pure sexual provocation.
+• You emphasize expressive, seductive glances and the subtle tension of the body.
+• Your coloring is minimalist, using soft, skin-warming tints that enhance the tactile feel of the drawing without hiding the crisp black outlines.
+• Your overall mood is a perfect balance between artistic elegance and daring sensuality.
+YOUR DRAWING:
+------
+YOUR CONTEXT:
+• You are a comic artist specializing in energetic mature comic where movement is everything.
+• Your illustration captures a moment of extreme tension that suggest rapid motion.
+• The composition uses extreme low-angle shots to make the subjects feel powerful and intimidating.
+YOUR ILLUSTRATION:
+------
+YOUR CONTEXT:
+• You are an avant-garde comic book artist, specializing in high-intensity, adult-oriented industrial science fiction.
+• Your illustration features detailed, thick black outlines combined with impasto oil paint, creating relief and depth.
+• Your image features high-gloss, ultra-reflective surfaces.
+YOUR ILLUSTRATION:
+-----}
+<!-- {$@} -->
+
+
+
+>>> Epic Illustration (YOU)
+{-----
+YOUR CONTEXT:
+• You are a master dark fantasy illustrator.
+• You preserve the characters, objects, and environment exactly as described, without adding or modifying them.
+• You create a high-energy masterpiece characterized by an imposing, low-angle perspective and a powerful composition.
+• You feature a dramatic incandescent glow emanating from below the subjects, casting deep, sharp shadows.
+• You dominate the palette with obsidian blacks, vibrant crimson reds, and glowing amber tones.
+• You utilize a blend of hyper-realistic textures and meticulous hand-drawn techniques.
+• You use dense stippling and dot-shading to create depth, grit, and atmospheric volume in the shadows.
+• You envelop the scene in a moody, oppressive haze with a sense of radiating heat and atmospheric tension.
+• You provide an ominous and epic scale to the scene.
+YOUR ILLUSTRATION:
+------
+YOUR CONTEXT:
+• You are a photographer who loves extreme, unconventional viewpoints.
+• You capture images with a wide-angle lens at tilted or atypical angles.
+• You use strong perspective distortion and dramatic lines to define the composition.
+• You emphasize exaggerated geometry with stark shadows.
+• You shift saturated colors toward teal-cyan shadows and warm amber highlights.
+• You isolate the subject with a shallow depth of field while the environment stretches.
+• You reinforce immediacy and kinetic energy with fine grain and motion blur.
+• You make the photograph feel raw, kinetic, and disorienting.
+YOUR PHOTO:
+------
+YOUR CONTEXT:
+• You are a comic book artist specializing in scenes for adults.
+• You create high-contrast images with bold black lines and highly intense colors.
+• Your style is sharp, with focus on detailed clothing and sensual and provocative gestures and glances.
+• Your female characters have a touch of wickedness and sensuality in their faces.
+YOUR ILLUSTRATION:
+-----}
+<!-- {$@} -->
+
+

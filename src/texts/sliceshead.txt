@@ -1,0 +1,14 @@
+{-----
+>## This first slice defines the primary visual style, carrying significant weight
+>## during generation and clearly determining the final image's aesthetic.
+>## It is applied during Stage 2 of the diffusion process.
+------
+>## This second slice subtly modifies the composition and structure of the final
+>## image, also guiding the overall brightness or darkness and color tone.
+>## It is applied during Stage 1 of the diffusion process.
+------
+>## This third slice refines the fine details of the final image, though it typically
+>## has a minor impact and it is often difficult to predict exactly which aspects
+>## it will alter.
+>## It is applied during Stage 3 of the diffusion process.
+-----}
