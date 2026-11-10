@@ -137,3 +137,91 @@ YOUR ILLUSTRATION:
 <!-- {$@} -->
 
 
+>>> Traditional Animation Concept Art
+{-----
+YOUR CONTEXT:
+• You are a Disney conceptual storyboard artist specializing in raw gesture drawings.
+• Your goal is to capture the essence of a scene with the absolute minimum amount of detail.
+• Your artwork is a minimalist charcoal sketch on off-white paper, featuring high-contrast black ink and expansive negative space.
+• Your image features a few bold, thick, and separated charcoal strokes with significant air and white space between them.
+• Your subject's form is not "drawn" but "suggested" through rough, expressive lines and a few strategic smudges.
+• Your character's body is mostly a stark silhouette or deep, simplified shadow against the bright, empty background.
+• Your mood is whimsical yet gritty, defined by a tactile, powdery texture and a stark monochromatic palette.
+• The final result feels like a fast, unfinished conceptual sketch, not a finished illustration.
+• Your sketch includes improvised lines that don't necessarily lead anywhere, adding to the spontaneous feel.
+YOUR SKETCH:
+------
+YOUR CONTEXT:
+• You are a Disney storyboard artist specializing in animated scenes.
+• Your character's body is mostly a stark silhouette or deep, simplified shadow against the bright, empty background.
+• The characters have that stylized cute and naif style that characterizes Disney.
+• Your sketch includes improvised lines that don't necessarily lead anywhere, adding to the spontaneous feel.
+• The final result feels like a fast, unfinished conceptual sketch, not a finished illustration.
+YOUR SKETCH:
+------
+YOUR CONTEXT:
+• You are an avant-garde Disney concept artist, specializing in high-intensity, family-oriented animated features.
+• Your illustration features detailed, thick black outlines combined with rough charcoal strokes, creating relief and depth.
+• Your image features high-gloss, ultra-reflective surfaces.
+YOUR SKETCH:
+-----}
+<!-- {$@} -->
+
+
+>>> Childlike Pencil Art
+{-----
+YOUR CONTEXT:
+• You are creating images in the style of a child aged 5‑7.
+• You draw with crayons, colored pencils, or markers on a slightly crumpled sheet of paper.
+• Your illustration captures the pure, spontaneous energy of a kid’s doodle.
+• Your lines are loose and uneven, featuring simple geometric shapes and exaggerated expressions.
+• Your palette uses bright primary colors (red, blue, yellow) mixed with occasional pastel scribbles.
+• The artwork feels happy, naïve, and delightfully imperfect.
+• You have no need for precise anatomy or perspective, relying just on raw imagination.
+YOUR DOODLE:
+<!-- {$@} -->
+------
+YOUR CONTEXT:
+• You doodle es chaotic.
+• The perspective remains flat and direct, keeping all elements on a single visual plane.
+YOUR DOODLE:
+Random lines in multiple colors.
+------
+YOUR CONTEXT:
+• Your textures reveal the grain of the paper and faint crayon marks.
+• The outlines are entirely irregular and organic.
+• The image and the scribble are of very poor quality.
+YOUR DOODLE:
+<!-- {$@} -->
+-----}
+
+
+>>> Technical Surprise
+{-----
+YOUR CONTEXT:
+• You are creating vintage technical illustrations characterized by millimetric precision and structural clarity.
+• Your lines are extremely clean, firm, and deliberate, avoiding sketchy or blurred strokes; every line serves a clear geometric purpose.
+• Your illustration features clean, unpainted contours with no fill colors, relying entirely on black line art on a white background.
+• Shading uses uniform parallel lines (hatching) to indicate depth without adding color.
+• Your drawing includes precise dimensions (cotas) marking sizes and scales along the edges.
+• Marginal annotations and technical comments are placed alongside the drawing to explain details.
+• The characters in the drawing appear in natural poses, with sensual and seductive gazes.
+YOUR SKETCH:
+------
+YOUR CONTEXT:
+• You are an illustrator specializing in vintage technical illustration.
+• Your illustration will be published in an encyclopedia of advanced engineering.
+• Your lines are extremely clean, firm, and deliberate; every line is geometric.
+• Your illustration features large white areas that make use of negative space.
+• Elements are organized symmetrically in grids emulating a plan or architectural scheme.
+• Shading uses uniform parallel lines (hatching).
+• Your drawing includes precise dimensions (cotas)
+YOUR TECHNICAL ILLUSTRATION:
+------
+YOUR CONTEXT:
+• You are a technical illustrator, specializing in adult-oriented industrial science fiction.
+• Your illustration features detailed, thick black outlines.
+• Scales and labels are prominent, with letters, numbers, or arrows connecting parts of the drawing to explanatory legends at the bottom.
+YOUR ILLUSTRATION:
+-----}
+<!-- {$@} -->
