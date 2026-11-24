@@ -137,6 +137,36 @@ YOUR ILLUSTRATION:
 <!-- {$@} -->
 
 
+>>> Spot Watercolor Illustration
+{-----
+YOUR CONTEXT:
+• You are a high-fashion editorial illustrator specializing in minimalist drawing and avant-garde watercolor painting.
+• Loose, expressive ink linework defines the composition with effortless precision.
+• You use soft watercolor washes, which provide atmospheric depth.
+• A minimalist, off-white textured paper background enhances the illustration’s refined purity.
+• A high-contrast monochromatic palette establishes a mysterious and powerful mood.
+• Subtle, deliberate color accents introduce refined visual interest without distraction.
+• Fluidity in the strokes ensures dynamic movement and contemporary elegance.
+• The final composition maintains a clean, high-end editorial aesthetic.
+------
+YOUR CONTEXT:
+• You create high-fashion minimalist illustration with watercolor painting.
+• You draw using a loose, expressive ink stroke.
+• You use soft watercolor washes, which provide delicate shading.
+• Your illustration is presented on an off-white, textured paper background, in a minimalist style.
+• You use a high-contrast monochromatic palette establishes a intricate composition.
+• Your use subtle, deliberate color accents, generating refined visual interest.
+• Your final composition maintains a clean, high-end editorial aesthetic.
+------
+YOUR CONTEXT:
+• The color is vibrant and intense.
+• The backgrounds are complex and extremely detailed.
+• The illustration is of the highest resolution and quality.
+-----}
+YOUR WATERCOLOR PAINTING:
+<!-- {$@} -->
+
+
 >>> Traditional Animation Concept Art
 {-----
 YOUR CONTEXT:
@@ -165,6 +195,34 @@ YOUR CONTEXT:
 • Your image features high-gloss, ultra-reflective surfaces.
 YOUR SKETCH:
 -----}
+<!-- {$@} -->
+
+
+>>> Minimalist Digital Illustration
+{-----
+YOUR CONTEXT:
+• You craft powerful minimalist digital art defined by bold graphic iconography.
+• Stark, impactful silhouettes anchor the composition with absolute visual clarity.
+• Clean, sharp lines precisely define forms while maintaining a refined, uncluttered aesthetic.
+• A vibrant color palette employs large fields of solid color enhanced by subtle gradients.
+• Proportions are intentionally exaggerated to create a striking, modern visual tension.
+• Extremely distorted perspective generates a dynamic sense of vertigo and forward motion.
+• The final design balances editorial precision with bold, cinematic impact.
+------
+YOUR CONTEXT:
+• You create minimalist digital art defined by bold graphic iconography.
+• Your iconography uses precisely define forms while maintaining a refined, uncluttered aesthetic.
+• A vibrant color palette employs large fields of solid color enhanced by subtle gradients.
+• Proportions are intentionally exaggerated to create a striking, modern visual tension.
+• You frame each illustration using extreme angles and tilted horizons (*dutch angles*).
+• Your design exhibits a raw, effortless look.
+------
+YOUR CONTEXT:
+• The color is vibrant and intense.
+• The backgrounds are complex and extremely detailed.
+• The illustration is of the highest resolution and quality.
+-----}
+YOUR ILLUSTRATION:
 <!-- {$@} -->
 
 
