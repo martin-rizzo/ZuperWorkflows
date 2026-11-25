@@ -25,7 +25,7 @@ to generate spectacular images with minimal effort, offering a balance between s
 
 1. [Features](#-features)
 2. [Requirements](#-requirements)
-3. [Workflow Parameters](#advanced-workflow-parameters)
+3. [Workflow Parameters](#%EF%B8%8F-workflow-parameters)
 4. [Internal Style Definitions](#%EF%B8%8F-internal-style-definitions)
 5. [Project Structure](#-project-structure)
 6. [License](#license)
@@ -65,7 +65,7 @@ to generate spectacular images with minimal effort, offering a balance between s
   * __[Z-Image_half_natural_vae.safetensors](https://huggingface.co/easygoing0114/Z-Image_clear_vae/resolve/main/Z-Image_half_natural_vae.safetensors)__ [335 MB]
 
 
-## Advanced Workflow Parameters
+## 🎛️ Workflow Parameters
 
 __seed__
 - The initial number for random generation. Each unique seed produces a different image.
