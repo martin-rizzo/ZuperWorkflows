@@ -24,9 +24,9 @@ to generate spectacular images with minimal effort, offering a balance between s
 ## Table of Contents
 
 1. [Features](#-features)
-2. [Requirements](#requirements)
+2. [Requirements](#-requirements)
 3. [Workflow Parameters](#advanced-workflow-parameters)
-4. [Internal Style Definitions](#️-internal-style-definitions)
+4. [Internal Style Definitions](#%EF%B8%8F-internal-style-definitions)
 5. [Project Structure](#-project-structure)
 6. [License](#license)
 
@@ -42,7 +42,7 @@ to generate spectacular images with minimal effort, offering a balance between s
 - **Modular Design**: Final workflows are built from source files for easy updates and rebuilding.
 
 
-## Requirements
+## 📦 Requirements
 
 #### Software & Custom Nodes
 
