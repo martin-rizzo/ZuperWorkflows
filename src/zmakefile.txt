@@ -6,6 +6,9 @@ texts/requirements.md
 >::LOAD! #ABOUT
 texts/about.md
 
+>::LOAD! #FILTER-SETTINGS
+texts/filtersettings.txt
+
 >::LOAD! #STYLES-CORE
 texts/sliceshead.txt[#1]
 styles-experimental.sty.txt[#1]

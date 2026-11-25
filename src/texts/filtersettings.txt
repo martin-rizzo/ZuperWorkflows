@@ -1,0 +1,10 @@
+# These variables define the minimum, default, and maximum range
+# for each filter, corresponding to slider values of -0.5, 0.0, and +0.5.
+
+color            = (0.20, 1.00, 2.10)
+color_shift      = (-15,     0,   15)
+color_twist      = (-90,     0,   90)
+chroma_blur      = (  5,     0,    5)
+brightness_curve = (0.50, 1.00, 2.20)
+contrast_z       = (0.30, 0.66, 1.10)
+
