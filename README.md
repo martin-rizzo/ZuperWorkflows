@@ -42,9 +42,8 @@ to generate spectacular images with minimal effort, offering a balance between s
 
 #### Checkpoints
 
-> <sub>NOTE: Although these are the preconfigured checkpoints, any other Z-Image Turbo  
-> or Qwen3-4b models should work correctly, including GGUF formats if ComfyUI-GGUF  
-> is properly installed.<sub>
+> <sub>NOTE: Although these are the preconfigured checkpoints, any other Z-Image Turbo or Qwen3-4b  
+> models should work correctly, including GGUF formats if ComfyUI-GGUF is properly installed.<sub>
 
 * __diffusion_model:__
   * __[z_image_turbo_int8_convrot_bf16emixed.safetensors](https://huggingface.co/martin-rizzo/Z-Image-Turbo-INT8-ConvRot-ComfyUI/resolve/main/z_image_turbo_int8_convrot_bf16emixed.safetensors)__ [6.17 GB]
