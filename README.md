@@ -17,7 +17,7 @@
 
 </div>
 
-**Zuper Workflows** are a collection of workflows designed for [ComfyUI](https://github.com/comfyanonymous/ComfyUI),
+**Zuper Workflows** are a collection of workflows designed for **[ComfyUI](https://github.com/comfyanonymous/ComfyUI)**,
 leveraging the power of the **[Z-Image Turbo](https://huggingface.co/Tongyi-MAI/Z-Image-Turbo)** model. They enable you
 to generate spectacular images with minimal effort, offering a balance between simplicity and advanced customization.
 
@@ -28,7 +28,7 @@ to generate spectacular images with minimal effort, offering a balance between s
 - **Fast Performance**: Generates images in 10 seconds or less using popular mainstream GPUs.
 - **Turbo Creativity**: Creates entirely different compositions with every seed.
 - **Basic & Advanced**: BASIC workflows for quick results; ADVANCED workflows for greater control.
-- **Dual Interface Modes**: Choose between a classic node spaghetti layout or the new simplified ComfyUI APP mode.
+- **Dual Interface Modes**: Choose between a classic spaghetti layout or the new simplified ComfyUI APP mode.
 - **Modular Design**: Final workflows are built from source files for easy updates and rebuilding.
 
 
@@ -44,8 +44,10 @@ to generate spectacular images with minimal effort, offering a balance between s
 
 __diffusion_model:__
 - __[z_image_turbo_int8_convrot_bf16emixed.safetensors](https://huggingface.co/martin-rizzo/Z-Image-Turbo-INT8-ConvRot-ComfyUI/resolve/main/z_image_turbo_int8_convrot_bf16emixed.safetensors)__ [6.17 GB]
+
 __text_encoder:__
 - __[qwen3-4b_int8_convrot_fp16emixed.safetensors](https://huggingface.co/martin-rizzo/Qwen3-4B-INT8-ConvRot-ComfyUI/resolve/main/qwen3-4b_int8_convrot_fp16emixed.safetensors)__ [4.42 GB]
+
 __vae:__
 - __[Z-Image_half_natural_vae.safetensors](https://huggingface.co/easygoing0114/Z-Image_clear_vae/resolve/main/Z-Image_half_natural_vae.safetensors)__ [335 MB]
 
