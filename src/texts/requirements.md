@@ -1,7 +1,7 @@
 ## Software Requirements
 
 * __[ComfyUI](https://github.com/Comfy-Org/ComfyUI)__ v0.27 or higher, preferably the latest available version.
-* __[Z-Image Power Nodes](https://github.com/martin-rizzo/ComfyUI-ZImagePowerNodes)__ v2.1.2 or higher
+* __[Z-Image Power Nodes](https://github.com/martin-rizzo/ComfyUI-ZImagePowerNodes)__ v2.1.4 or higher
 * __[ComfyUI-GGUF](https://github.com/city96/ComfyUI-GGUF)__ (only if you intend to use GGUF checkpoints)
 
 ## Model Requirements
@@ -39,8 +39,8 @@ Please ensure you update ComfyUI first and have the latest version of the Z-Imag
 
 ## Alternative Checkpoints
 
-> The following checkpoints are provided as alternatives in case you experience issues.  
-> Due to the wide variety of GPUs, VRAM capacities, and ComfyUI versions, one of these may work better for your system.
+> The following checkpoints are provided as an alternative in the event of any issue.
+> Due to the wide variety of GPUs, VRAM capacities, and ComfyUI versions, it's hard to recommend a specific checkpoint, as it's best to test how each one performs on your own system.
 
 **diffusion_models**
 

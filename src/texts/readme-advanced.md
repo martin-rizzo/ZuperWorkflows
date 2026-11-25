@@ -1,7 +1,7 @@
 ## 🦸 Zuper Workflows [ADVANCED]
 
-This workflow enhances image generation with Z-Image Turbo (ZIT), incorporating advanced parameters for precise control without sacrificing ease of use.
-It leverages comfy_kitchen, subgraphs, and INT8-ConvRot quantization, alongside the visual features of Node 2.0, therefore, it is recommended to run the latest version of ComfyUI with these features enabled.
+This workflow enhances the quality of images generated with Z-Image Turbo (ZIT). It introduces advanced parameters for precise control without sacrificing ease of use. Since the workflow leverages comfy_kitchen, subgraphs, and INT8-ConvRot quantization, along with the visual features of Node 2.0, it is recommended to run the latest version of ComfyUI with all these features enabled.
+
 
 ## Parameters
 
@@ -25,25 +25,35 @@ __noise_shift__
 * 0.0 is the optimal setting and is generally best left unchanged, as its effects can be unpredictable.
 
 __turbo_creativity__
-* Shakes up the generation process to produce unique, original compositions and avoid generic AI aesthetics.
-* It is prone to generating hallucinations and duplicate elements, especially in high-contrast images.
-* Disable this feature if you require highly precise and complex images.
-* Enable this feature when exploring creative compositions with substantial variations between different seeds.
-* Working with __turbo_creativity__ involves testing multiple seeds until you find the ideal one.
-* Some minor defects and small hallucinations can be corrected by tweaking __"steps"__ and __"initial_bias"__.
+* Shakes up the generation process to produce unique and original compositions, avoiding the generic AI aesthetic.
+* This option may generate hallucinations and duplicated elements, especially in high-contrast images.
+* Disable it when you need highly precise and complex images.
+* Enable it when exploring creative compositions that show substantial variations across different seeds.
+* Using __"turbo_creativity"__ may require testing multiple seeds to find the ideal one.
+* Minor defects and small hallucinations can be corrected by adjusting the __"steps"__ and __"noise_shift"__ parameters.
+
+__brightness__
+* Adjusts the overall brightness of the image.
+* Positive values lighten the image, while negative values darken it.
 
 __contrast__
-* Controls the intensity of brightness transitions in the final image.
-* Typically, a value of 0.2 (positive) works very well.
+* Adjusts the difference between light and dark areas in the image.
+* Positive values increase contrast, making darks darker and lights lighter for a more striking appearance.
+* Negative values decrease contrast, resulting in a flatter, more muted look.
 
 __color__
 * Adjusts the color saturation of the image.
-* Generally, a value of 0.2 (positive) yields a colorful image.
-* If the image color appears too intense and artificial, it is advisable to lower it to 0.0 or even -0.2 (negative).
+* Positive values produce highly colorful images.
+* If the colors appear too intense or artificial, negative values are generally recommended.
 
-__hue__
-* Modifies the color tint, primarily used to calibrate skin tones.
-* Typically, a value of -0.2 (negative) works very well.
+__color_warp__
+* Slightly adjusts the overall color tint of the image.
+* Useful for calibrating skin tones or shifting the palette toward more vibrant or extravagant hues.
+
+__color_softness__
+* Smooths color transitions across the image.
+* A value of 0.0 leaves the image colors unmodified.
+* Both positive and negative values soften the transitions between colors, which could give the image a more realistic appearance.
 
 __detailed_sampling__
 * Applies a different sampling method during the final steps to add finer details, although it may increase generation time.

@@ -1,6 +1,6 @@
 ## 🦸 Zuper Workflows [BASIC]
 
-This workflow simplifies image generation with Z-Image Turbo (ZIT), featuring a reduced set of parameters for easy setup. It shares the same internal functionality as the ADVANCED version but offers fewer options to avoid complex configurations. It leverages comfy_kitchen, subgraphs, and INT8-ConvRot quantization, alongside the visual features of Node 2.0, therefore, it is recommended to run the latest version of ComfyUI with these features enabled.
+This workflow enhances the quality of images generated with Z-Image Turbo (ZIT). It shares the same internal functionality as the ADVANCED version but offers fewer options to avoid complex configurations. Since the workflow leverages comfy_kitchen, subgraphs, and INT8-ConvRot quantization, along with the visual features of Node 2.0, it is recommended to run the latest version of ComfyUI with all these features enabled.
 
 ## Parameters
 
@@ -16,17 +16,16 @@ __prompt__
 * Avoid style keywords such as photo, comic, or blur, as the selected styles handle all visual effects automatically.
 
 __turbo_creativity__
-* Shakes up the generation process to produce unique, original compositions and avoid generic AI aesthetics.
-* It is prone to generating hallucinations and duplicate elements, especially in high-contrast images.
-* Disable this feature if you require highly precise and complex images.
-* Enable this feature when exploring creative compositions with substantial variations between different seeds.
-* Working with __turbo_creativity__ involves testing multiple seeds until you find the ideal one.
-* Some minor defects and small hallucinations can be corrected by tweaking __"steps"__ and __"initial_bias"__.
+* Shakes up the generation process to produce unique and original compositions, avoiding the generic AI aesthetic.
+* This option may generate hallucinations and duplicated elements, especially in high-contrast images.
+* Disable it when you need highly precise and complex images.
+* Enable it when exploring creative compositions that show substantial variations across different seeds.
+* Using __"turbo_creativity"__ may require testing multiple seeds to find the ideal one.
 
 __color__
 * Adjusts the color saturation of the image.
-* Generally, a value of 0.2 (positive) yields a colorful image.
-* If the image color appears too intense and artificial, it is advisable to lower it to 0.0 or even -0.2 (negative).
+* Positive values produce highly colorful images.
+* If the colors appear too intense or artificial, negative values are generally recommended.
 
 __orientation__
 * Sets the orientation of the final image, where vertical creates a portrait format and horizontal creates a landscape format.
