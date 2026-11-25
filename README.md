@@ -17,7 +17,7 @@
 
 </div>
 
-**Zuper Workflows** are a collection of workflows designed for **[ComfyUI](https://github.com/comfyanonymous/ComfyUI)**,
+**Zuper Workflows** are a collection of workflows for **[ComfyUI](https://github.com/comfyanonymous/ComfyUI)**,
 leveraging the power of the **[Z-Image Turbo](https://huggingface.co/Tongyi-MAI/Z-Image-Turbo)** model. They enable you
 to generate spectacular images with minimal effort, offering a balance between simplicity and advanced customization.
 
@@ -28,36 +28,35 @@ to generate spectacular images with minimal effort, offering a balance between s
 - **Fast Performance**: Generates images in 10 seconds or less using popular mainstream GPUs.
 - **Turbo Creativity**: Creates entirely different compositions with every seed.
 - **Basic & Advanced**: BASIC workflows for quick results; ADVANCED workflows for greater control.
-- **Dual Interface Modes**: Choose between a classic spaghetti layout or the new simplified ComfyUI APP mode.
+- **Dual Interface Modes**: Choose between spaghetti layout or the new simplified ComfyUI APP mode.
 - **Modular Design**: Final workflows are built from source files for easy updates and rebuilding.
 
 
 ## Requirements
 
-### Software & Custom Nodes
+#### Software & Custom Nodes
 
 * __[ComfyUI](https://github.com/Comfy-Org/ComfyUI)__ v0.27 or higher, preferably the latest available version.
 * __[Z-Image Power Nodes](https://github.com/martin-rizzo/ComfyUI-ZImagePowerNodes)__ v2.1.4 or higher
 * __[ComfyUI-GGUF](https://github.com/city96/ComfyUI-GGUF)__ (only if you intend to use GGUF checkpoints)
 
-### Checkpoints
+#### Checkpoints
 
-__diffusion_model:__
-- __[z_image_turbo_int8_convrot_bf16emixed.safetensors](https://huggingface.co/martin-rizzo/Z-Image-Turbo-INT8-ConvRot-ComfyUI/resolve/main/z_image_turbo_int8_convrot_bf16emixed.safetensors)__ [6.17 GB]
+> <sub>NOTE: Although these are the preconfigured checkpoints, any other Z-Image Turbo  
+> or Qwen3-4b models should work correctly, including GGUF formats if ComfyUI-GGUF  
+> is properly installed.<sub>
 
-__text_encoder:__
-- __[qwen3-4b_int8_convrot_fp16emixed.safetensors](https://huggingface.co/martin-rizzo/Qwen3-4B-INT8-ConvRot-ComfyUI/resolve/main/qwen3-4b_int8_convrot_fp16emixed.safetensors)__ [4.42 GB]
+* __diffusion_model:__
+  * __[z_image_turbo_int8_convrot_bf16emixed.safetensors](https://huggingface.co/martin-rizzo/Z-Image-Turbo-INT8-ConvRot-ComfyUI/resolve/main/z_image_turbo_int8_convrot_bf16emixed.safetensors)__ [6.17 GB]
 
-__vae:__
-- __[Z-Image_half_natural_vae.safetensors](https://huggingface.co/easygoing0114/Z-Image_clear_vae/resolve/main/Z-Image_half_natural_vae.safetensors)__ [335 MB]
+* __text_encoder:__
+  * __[qwen3-4b_int8_convrot_fp16emixed.safetensors](https://huggingface.co/martin-rizzo/Qwen3-4B-INT8-ConvRot-ComfyUI/resolve/main/qwen3-4b_int8_convrot_fp16emixed.safetensors)__ [4.42 GB]
 
-> [!NOTE]
-> Although these are the preconfigured checkpoints, any other Z-Image Turbo
-> or Qwen3-4b models should work correctly, including GGUF formats if
-> [ComfyUI-GGUF](https://github.com/city96/ComfyUI-GGUF) is properly installed.
+* __vae:__
+  * __[Z-Image_half_natural_vae.safetensors](https://huggingface.co/easygoing0114/Z-Image_clear_vae/resolve/main/Z-Image_half_natural_vae.safetensors)__ [335 MB]
 
 
-## Available Parameters in the Advanced Version
+## Advanced Workflow Parameters
 
 __seed__
 - The initial number for random generation. Each unique seed produces a different image.
@@ -136,6 +135,18 @@ __imprint_style_label__
 - Recommended to be left disabled by default.
 
 
+## ⚙️ Internal Style Definitions
+
+The `./src/*.sty.txt` files contain the style definitions. Each style is divided into 'slices', generating distinct
+prompts for each diffusion stage, which enhances the originality of the final image. These files serve as the base
+components from which the workflows are automatically generated using the `zmake.py` script.
+
+There are 3 slices, delimited by the `{-----` and `-----}` tags. Each slice influences the final image differently:
+ 1. **CORE**: Clearly defines the overall style of the final image.
+ 2. **LAYOUT**: Controls composition and structure, primarily influencing color and lighting.
+ 3. **POLISH**: Adjusts fine pixel-level details, having a subtle overall impact.
+
+
 ## 📂 Project Structure
 
 ```
@@ -172,18 +183,6 @@ __imprint_style_label__
         ├── ZuperWF-advanced.template.json  # Template for the workflow ADVANCED version
         └── ZuperWF-basic.template.json     # Template for the workflow BASIC version
 ```
-
-
-## Internal Style Definitions
-
-The `./src/*.sty.txt` files contain the style definitions. Each style is divided into 'slices', generating distinct
-prompts for each diffusion stage, which enhances the originality of the final image. These files serve as the base
-components from which the workflows are automatically generated using the `zmake.py` script.
-
-There are 3 slices, delimited by the `{-----` and `-----}` tags. Each slice influences the final image differently:
- 1. **CORE**: Clearly defines the overall style of the final image.
- 2. **LAYOUT**: Controls composition and structure, primarily influencing color and lighting.
- 3. **POLISH**: Adjusts fine pixel-level details, having a subtle overall impact.
 
 
 ## License
