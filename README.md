@@ -21,6 +21,16 @@
 leveraging the power of the **[Z-Image Turbo](https://huggingface.co/Tongyi-MAI/Z-Image-Turbo)** model. They enable you
 to generate spectacular images with minimal effort, offering a balance between simplicity and advanced customization.
 
+## Table of Contents
+
+1. [Features](#-features)
+2. [Requirements](#requirements)
+3. [Workflow Parameters](#advanced-workflow-parameters)
+4. [Internal Style Definitions](#️-internal-style-definitions)
+5. [Project Structure](#-project-structure)
+6. [License](#license)
+
+
 
 ## 💎 Features
 
