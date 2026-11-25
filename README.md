@@ -18,16 +18,17 @@
 </div>
 
 **Zuper Workflows** are a collection of workflows designed for [ComfyUI](https://github.com/comfyanonymous/ComfyUI),
-leveraging the power of the **Z-Image Turbo** model. They enable you to generate spectacular images with minimal effort,
-offering a balance between simplicity and advanced customization.
+leveraging the power of the **[Z-Image Turbo](https://huggingface.co/Tongyi-MAI/Z-Image-Turbo)** model. They enable you
+to generate spectacular images with minimal effort, offering a balance between simplicity and advanced customization.
 
 
 ## 💎 Features
 
-- **Effortless Generation**: Easily create high-quality images with optimized settings and pre-configured styles.
-- **Style Customization**: Includes visual styles that leverage each diffusion stage for more original results.
-- **Dual Interface Modes**: Choose between a classic node spaghetti layout or the new simplified ComfyUI application mode.
-- **Basic & Advanced Variants**: Grouped into `BASIC` workflows for quick results or `ADVANCED` workflows for greater control over the final image.
+- **Visual Styles**: 20+ preconfigured visual styles to achieve high-impact results.
+- **Fast Performance**: Generates images in 10 seconds or less using popular mainstream GPUs.
+- **Turbo Creativity**: Creates entirely different compositions with every seed.
+- **Basic & Advanced**: BASIC workflows for quick results; ADVANCED workflows for greater control.
+- **Dual Interface Modes**: Choose between a classic node spaghetti layout or the new simplified ComfyUI APP mode.
 - **Modular Design**: Final workflows are built from source files for easy updates and rebuilding.
 
 
@@ -41,12 +42,12 @@ offering a balance between simplicity and advanced customization.
 
 ### Checkpoints
 
-* __diffusion_model:__
-  - __[z_image_turbo_int8_convrot_bf16emixed.safetensors](https://huggingface.co/martin-rizzo/Z-Image-Turbo-INT8-ConvRot-ComfyUI/resolve/main/z_image_turbo_int8_convrot_bf16emixed.safetensors)__ [6.17 GB]
-* __text_encoder:__
-  - __[qwen3-4b_int8_convrot_fp16emixed.safetensors](https://huggingface.co/martin-rizzo/Qwen3-4B-INT8-ConvRot-ComfyUI/resolve/main/qwen3-4b_int8_convrot_fp16emixed.safetensors)__ [4.42 GB]
-* __vae:__
-  - __[Z-Image_half_natural_vae.safetensors](https://huggingface.co/easygoing0114/Z-Image_clear_vae/resolve/main/Z-Image_half_natural_vae.safetensors)__ [335 MB]
+__diffusion_model:__
+- __[z_image_turbo_int8_convrot_bf16emixed.safetensors](https://huggingface.co/martin-rizzo/Z-Image-Turbo-INT8-ConvRot-ComfyUI/resolve/main/z_image_turbo_int8_convrot_bf16emixed.safetensors)__ [6.17 GB]
+__text_encoder:__
+- __[qwen3-4b_int8_convrot_fp16emixed.safetensors](https://huggingface.co/martin-rizzo/Qwen3-4B-INT8-ConvRot-ComfyUI/resolve/main/qwen3-4b_int8_convrot_fp16emixed.safetensors)__ [4.42 GB]
+__vae:__
+- __[Z-Image_half_natural_vae.safetensors](https://huggingface.co/easygoing0114/Z-Image_clear_vae/resolve/main/Z-Image_half_natural_vae.safetensors)__ [335 MB]
 
 > [!NOTE]
 > Although these are the preconfigured checkpoints, any other Z-Image Turbo
@@ -54,7 +55,7 @@ offering a balance between simplicity and advanced customization.
 > [ComfyUI-GGUF](https://github.com/city96/ComfyUI-GGUF) is properly installed.
 
 
-## Parameter Documentation
+## Available Parameters in the Advanced Version
 
 __seed__
 - The initial number for random generation. Each unique seed produces a different image.
@@ -138,39 +139,49 @@ __imprint_style_label__
 ```
 ├── LICENSE                   # License file
 ├── README.md                 # This file
-├── ZuperAPP-advanced.json    # Final generated advanced comfyui-application
-├── ZuperAPP-basic.json       # Final generated basic comfyui-application
+├── README-VSCODE.md          # VS Code specific configuration
+├── ZuperAPP-advanced.json    # Final generated advanced comfyui-app
+├── ZuperAPP-basic.json       # Final generated basic comfyui-app
 ├── ZuperWF-advanced.json     # Final generated advanced workflow
 ├── ZuperWF-basic.json        # Final generated basic workflow
 ├── ZWF-README.txt            # Plain text README included in the final .zip with the workflows
-├── src/
-│   ├── about.md                        # About section for workflow internal documentation
-│   ├── readme-advanced.md              # README content for the ADVANCED workflows
-│   ├── readme-basic.md                 # README content for the BASE workflows
-│   ├── requirements.md                 # Requirements section for workflow internal documentation
-│   ├── STYLES.sty.txt                  # Unified styles file with segments for each diffusion stage
-│   ├── zmakefile.txt                   # Build configuration file
-│   ├── ZuperAPP-advanced.template.json # Template for building the ADVANCED version of the application
-│   ├── ZuperAPP-basic.template.json    # Template for building the BASIC version of the application
-│   ├── ZuperWF-advanced.template.json  # Template for building the ADVANCED version of the workflow
-│   └── ZuperWF-basic.template.json     # Template for building the BASIC version of the workflow
-└── scripts/
-    ├── print_slice.py                  # Experimental script used during development
-    ├── print_slice.sh                  # Shell wrapper for print_slice.py
-    ├── zmake.py                        # Core workflow generation script
-    └── zmake.sh                        # Shell wrapper for zmake.py
+├── scripts/
+│   ├── print_slice.py        # Experimental script used during development
+│   ├── print_slice.sh        # Shell wrapper for print_slice.py
+│   ├── zmake.py              # Core workflow generation script
+│   └── zmake.sh              # Shell wrapper for zmake.py
+└── src/
+    ├── styles-experimental.sty.txt         # Experimental style definitions
+    ├── styles-illustration.sty.txt         # Illustration style definitions
+    ├── styles-miniature.sty.txt            # Miniature style definitions
+    ├── styles-photo.sty.txt                # Photo style definitions
+    ├── zdiscarded.sty.txt                  # Discarded style definitions
+    ├── zmakefile.txt                       # Build configuration file
+    ├── texts/
+    │   ├── about.md                        # About section for workflow internal documentation
+    │   ├── filtersettings.txt              # Filter settings for workflows
+    │   ├── readme-advanced.md              # README content for ADVANCED workflows
+    │   ├── readme-basic.md                 # README content for BASE workflows
+    │   ├── requirements.md                 # Requirements section for workflow internal documentation
+    │   └── sliceshead.txt                  # Slices header information
+    └── workflows/
+        ├── ZuperAPP-advanced.template.json # Template for the ADVANCED version of the comfyui-app
+        ├── ZuperAPP-basic.template.json    # Template for the BASIC version of the comfyui-app
+        ├── ZuperWF-advanced.template.json  # Template for the workflow ADVANCED version
+        └── ZuperWF-basic.template.json     # Template for the workflow BASIC version
 ```
 
 
-## 🎨 Internal Style Definitions
+## Internal Style Definitions
 
-The `./src/STYLES.sty.txt` file contains segmented styles for each diffusion stage.
-This file serves as the foundation from which the workflows are automatically generated using the `zmake.py` script.
+The `./src/*.sty.txt` files contain the style definitions. Each style is divided into 'slices', generating distinct
+prompts for each diffusion stage, which enhances the originality of the final image. These files serve as the base
+components from which the workflows are automatically generated using the `zmake.py` script.
 
-Example segments:
-- **Core Styles**: Define the foundational appearance of the image.
-- **Layout Styles**: Control the composition and structure.
-- **Final Styles**: Refine the overall aesthetic.
+There are 3 slices, delimited by the `{-----` and `-----}` tags. Each slice influences the final image differently:
+ 1. **CORE**: Clearly defines the overall style of the final image.
+ 2. **LAYOUT**: Controls composition and structure, primarily influencing color and lighting.
+ 3. **POLISH**: Adjusts fine pixel-level details, having a subtle overall impact.
 
 
 ## License
