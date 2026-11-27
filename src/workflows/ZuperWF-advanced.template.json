@@ -72,6 +72,24 @@
           "link": null
         },
         {
+          "label": "brightness",
+          "name": "filter4_tweak",
+          "type": "FLOAT",
+          "widget": {
+            "name": "filter4_tweak"
+          },
+          "link": null
+        },
+        {
+          "label": "contrast",
+          "name": "filter5_tweak",
+          "type": "FLOAT",
+          "widget": {
+            "name": "filter5_tweak"
+          },
+          "link": null
+        },
+        {
           "label": "color",
           "name": "filter1_tweak",
           "type": "FLOAT",
@@ -95,24 +113,6 @@
           "type": "FLOAT",
           "widget": {
             "name": "filter3_tweak"
-          },
-          "link": null
-        },
-        {
-          "label": "brightness",
-          "name": "filter4_tweak",
-          "type": "FLOAT",
-          "widget": {
-            "name": "filter4_tweak"
-          },
-          "link": null
-        },
-        {
-          "label": "contrast",
-          "name": "filter5_tweak",
-          "type": "FLOAT",
-          "widget": {
-            "name": "filter5_tweak"
           },
           "link": null
         },
@@ -220,11 +220,11 @@
         "steps": 8,
         "initial_bias": -2.7755575615628914e-17,
         "turbo_creativity": true,
+        "filter4_tweak": 0,
+        "filter5_tweak": 0,
         "filter1_tweak": 0,
         "filter2_tweak": 0,
         "filter3_tweak": 0,
-        "filter4_tweak": 0,
-        "filter5_tweak": 0,
         "detailed_refiner": true,
         "orientation": false,
         "ratio": "3:2  (photo)",
@@ -455,6 +455,32 @@
             ]
           },
           {
+            "id": "c4b359d0-3313-4121-9a01-bc20ba1fc3ec",
+            "name": "filter4_tweak",
+            "type": "FLOAT",
+            "linkIds": [
+              178
+            ],
+            "label": "brightness",
+            "pos": [
+              -960.8552037493341,
+              -371.26816321876595
+            ]
+          },
+          {
+            "id": "49ed8ff8-3dc9-449f-a534-4060e3a506ff",
+            "name": "filter5_tweak",
+            "type": "FLOAT",
+            "linkIds": [
+              179
+            ],
+            "label": "contrast",
+            "pos": [
+              -960.8552037493341,
+              -351.26816321876595
+            ]
+          },
+          {
             "id": "778451f5-ae92-43b8-8a77-0498ae6bbb4c",
             "name": "filter1_tweak",
             "type": "FLOAT",
@@ -491,32 +517,6 @@
             "pos": [
               -960.8552037493341,
               -391.26816321876595
-            ]
-          },
-          {
-            "id": "c4b359d0-3313-4121-9a01-bc20ba1fc3ec",
-            "name": "filter4_tweak",
-            "type": "FLOAT",
-            "linkIds": [
-              178
-            ],
-            "label": "brightness",
-            "pos": [
-              -960.8552037493341,
-              -371.26816321876595
-            ]
-          },
-          {
-            "id": "49ed8ff8-3dc9-449f-a534-4060e3a506ff",
-            "name": "filter5_tweak",
-            "type": "FLOAT",
-            "linkIds": [
-              179
-            ],
-            "label": "contrast",
-            "pos": [
-              -960.8552037493341,
-              -351.26816321876595
             ]
           },
           {
@@ -2210,6 +2210,22 @@
             "type": "IMAGE"
           },
           {
+            "id": 180,
+            "origin_id": 74,
+            "origin_slot": 1,
+            "target_id": 84,
+            "target_slot": 0,
+            "type": "STRING"
+          },
+          {
+            "id": 181,
+            "origin_id": 85,
+            "origin_slot": 0,
+            "target_id": 83,
+            "target_slot": 1,
+            "type": "STRING"
+          },
+          {
             "id": 150,
             "origin_id": -10,
             "origin_slot": 0,
@@ -2242,6 +2258,30 @@
             "type": "ZIPN_STYLE"
           },
           {
+            "id": 116,
+            "origin_id": -10,
+            "origin_slot": 2,
+            "target_id": 54,
+            "target_slot": 4,
+            "type": "STRING"
+          },
+          {
+            "id": 139,
+            "origin_id": -10,
+            "origin_slot": 2,
+            "target_id": 74,
+            "target_slot": 4,
+            "type": "STRING"
+          },
+          {
+            "id": 159,
+            "origin_id": -10,
+            "origin_slot": 2,
+            "target_id": 79,
+            "target_slot": 4,
+            "type": "STRING"
+          },
+          {
             "id": 151,
             "origin_id": -10,
             "origin_slot": 3,
@@ -2256,6 +2296,62 @@
             "target_id": 78,
             "target_slot": 7,
             "type": "FLOAT"
+          },
+          {
+            "id": 153,
+            "origin_id": -10,
+            "origin_slot": 5,
+            "target_id": 78,
+            "target_slot": 8,
+            "type": "BOOLEAN"
+          },
+          {
+            "id": 178,
+            "origin_id": -10,
+            "origin_slot": 6,
+            "target_id": 83,
+            "target_slot": 6,
+            "type": "FLOAT"
+          },
+          {
+            "id": 179,
+            "origin_id": -10,
+            "origin_slot": 7,
+            "target_id": 83,
+            "target_slot": 2,
+            "type": "FLOAT"
+          },
+          {
+            "id": 175,
+            "origin_id": -10,
+            "origin_slot": 8,
+            "target_id": 83,
+            "target_slot": 3,
+            "type": "FLOAT"
+          },
+          {
+            "id": 176,
+            "origin_id": -10,
+            "origin_slot": 9,
+            "target_id": 83,
+            "target_slot": 4,
+            "type": "FLOAT"
+          },
+          {
+            "id": 177,
+            "origin_id": -10,
+            "origin_slot": 10,
+            "target_id": 83,
+            "target_slot": 5,
+            "type": "FLOAT"
+          },
+          {
+            "id": 154,
+            "origin_id": -10,
+            "origin_slot": 11,
+            "target_id": 78,
+            "target_slot": 9,
+            "type": "BOOLEAN"
           },
           {
             "id": 35,
@@ -2312,102 +2408,6 @@
             "target_id": 77,
             "target_slot": 1,
             "type": "BOOLEAN"
-          },
-          {
-            "id": 180,
-            "origin_id": 74,
-            "origin_slot": 1,
-            "target_id": 84,
-            "target_slot": 0,
-            "type": "STRING"
-          },
-          {
-            "id": 181,
-            "origin_id": 85,
-            "origin_slot": 0,
-            "target_id": 83,
-            "target_slot": 1,
-            "type": "STRING"
-          },
-          {
-            "id": 116,
-            "origin_id": -10,
-            "origin_slot": 2,
-            "target_id": 54,
-            "target_slot": 4,
-            "type": "STRING"
-          },
-          {
-            "id": 139,
-            "origin_id": -10,
-            "origin_slot": 2,
-            "target_id": 74,
-            "target_slot": 4,
-            "type": "STRING"
-          },
-          {
-            "id": 153,
-            "origin_id": -10,
-            "origin_slot": 5,
-            "target_id": 78,
-            "target_slot": 8,
-            "type": "BOOLEAN"
-          },
-          {
-            "id": 154,
-            "origin_id": -10,
-            "origin_slot": 11,
-            "target_id": 78,
-            "target_slot": 9,
-            "type": "BOOLEAN"
-          },
-          {
-            "id": 159,
-            "origin_id": -10,
-            "origin_slot": 2,
-            "target_id": 79,
-            "target_slot": 4,
-            "type": "STRING"
-          },
-          {
-            "id": 179,
-            "origin_id": -10,
-            "origin_slot": 10,
-            "target_id": 83,
-            "target_slot": 2,
-            "type": "FLOAT"
-          },
-          {
-            "id": 175,
-            "origin_id": -10,
-            "origin_slot": 6,
-            "target_id": 83,
-            "target_slot": 3,
-            "type": "FLOAT"
-          },
-          {
-            "id": 176,
-            "origin_id": -10,
-            "origin_slot": 7,
-            "target_id": 83,
-            "target_slot": 4,
-            "type": "FLOAT"
-          },
-          {
-            "id": 177,
-            "origin_id": -10,
-            "origin_slot": 8,
-            "target_id": 83,
-            "target_slot": 5,
-            "type": "FLOAT"
-          },
-          {
-            "id": 178,
-            "origin_id": -10,
-            "origin_slot": 9,
-            "target_id": 83,
-            "target_slot": 6,
-            "type": "FLOAT"
           }
         ],
         "extra": {}

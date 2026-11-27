@@ -22,6 +22,10 @@ __turbo_creativity__
 * Enable it when exploring creative compositions that show substantial variations across different seeds.
 * Using __"turbo_creativity"__ may require testing multiple seeds to find the ideal one.
 
+__brightness__
+* Adjusts the overall brightness of the image.
+* Positive values lighten the image, while negative values darken it.
+
 __color__
 * Adjusts the color saturation of the image.
 * Positive values produce highly colorful images.

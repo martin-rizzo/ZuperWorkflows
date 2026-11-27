@@ -171,7 +171,6 @@ texts/readme-basic.md
 seed   = 1
 style  = iPhone Photo
 prompt = Worn control panels surround a young woman in dirty clothes seated in a spaceship, creating a hyperpunk scene. She sits comfortably and relaxed in the control chair, looking directly at the camera with her legs wide apart. The chair has a large, heavy, polished metal frame, while the seat is padded black leather. The woman exudes self-assurance and gazes at the camera with a subtle, sadistic smile, her expression both sensual and defiant. On the right, you can see the head/skull of a xenomorph, made of bone, displayed as a trophy.
-color  = -0.1
 
 >::MAKE
 {#PWD}/ZuperAPP-basic.json : workflows/ZuperAPP-basic.template.json

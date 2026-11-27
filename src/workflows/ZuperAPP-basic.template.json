@@ -1,19 +1,19 @@
 {
-  "id": "166ed953-5a88-4759-82eb-93fca80de826",
+  "id": "635621d8-200e-4d2e-89d0-fe846f9fcacd",
   "revision": 0,
-  "last_node_id": 81,
-  "last_link_id": 165,
+  "last_node_id": 85,
+  "last_link_id": 181,
   "nodes": [
     {
       "id": 22,
       "type": "SaveImage //ZImagePowerNodes",
       "pos": [
-        1690,
-        180
+        1720,
+        130
       ],
       "size": [
-        700,
-        880
+        670,
+        710
       ],
       "flags": {},
       "order": 4,
@@ -43,11 +43,11 @@
       "type": "22148af9-ea62-4d0e-8039-cfdf1081fa66",
       "pos": [
         1030,
-        180
+        130
       ],
       "size": [
-        640,
-        880
+        670,
+        710
       ],
       "flags": {},
       "order": 0,
@@ -63,11 +63,20 @@
           "link": null
         },
         {
-          "label": "color",
-          "name": "effect_2_tweak",
+          "label": "brightness",
+          "name": "filter4_tweak",
           "type": "FLOAT",
           "widget": {
-            "name": "effect_2_tweak"
+            "name": "filter4_tweak"
+          },
+          "link": null
+        },
+        {
+          "label": "color",
+          "name": "filter1_tweak",
+          "type": "FLOAT",
+          "widget": {
+            "name": "filter1_tweak"
           },
           "link": null
         },
@@ -97,15 +106,6 @@
             "name": "vae_name"
           },
           "link": null
-        },
-        {
-          "label": "imprint_style_label",
-          "name": "enable_label",
-          "type": "BOOLEAN",
-          "widget": {
-            "name": "enable_label"
-          },
-          "link": null
         }
       ],
       "outputs": [
@@ -125,36 +125,36 @@
         "Photo2",
         "Elon Musk perched on the shoulders of a xenomorph alien in a shopping mall, waving his arm, looking funny, very happy. That is to say, the xenomorph should be at the bottom of the image, smiling and looking at the camera, while Elon is at the top, euphoric with joy. Both of them playfully interacting like two good friends.",
         true,
-        0.20000000000000004,
+        0,
+        0,
         false,
         "z_image_turbo_int8_convrot_bf16emixed.safetensors",
         "qwen3-4b_int8_convrot_fp16emixed.safetensors",
-        "Z-Image_half_natural_vae.safetensors",
-        false
+        "Z-Image_half_natural_vae.safetensors"
       ],
       "widgets_values_named": {
         "seed": 1,
         "style_1": "Photo2",
         "prompt": "Elon Musk perched on the shoulders of a xenomorph alien in a shopping mall, waving his arm, looking funny, very happy. That is to say, the xenomorph should be at the bottom of the image, smiling and looking at the camera, while Elon is at the top, euphoric with joy. Both of them playfully interacting like two good friends.",
         "turbo_creativity": true,
-        "effect_2_tweak": 0.20000000000000004,
+        "filter4_tweak": 0,
+        "filter1_tweak": 0,
         "orientation": false,
         "checkpoint": "z_image_turbo_int8_convrot_bf16emixed.safetensors",
         "checkpoint_1": "qwen3-4b_int8_convrot_fp16emixed.safetensors",
-        "vae_name": "Z-Image_half_natural_vae.safetensors",
-        "enable_label": false
+        "vae_name": "Z-Image_half_natural_vae.safetensors"
       }
     },
     {
-      "id": 63,
+      "id": 80,
       "type": "MarkdownNote",
       "pos": [
-        -410,
-        180
+        -360,
+        140
       ],
       "size": [
         640,
-        1600
+        1410
       ],
       "flags": {
         "collapsed": false
@@ -175,15 +175,15 @@
       "bgcolor": "#000"
     },
     {
-      "id": 65,
+      "id": 81,
       "type": "MarkdownNote",
       "pos": [
-        240,
-        180
+        290,
+        140
       ],
       "size": [
         690,
-        1270
+        1740
       ],
       "flags": {},
       "order": 2,
@@ -202,14 +202,14 @@
       "bgcolor": "#000"
     },
     {
-      "id": 81,
+      "id": 82,
       "type": "MarkdownNote",
       "pos": [
-        240,
-        1490
+        -360,
+        1590
       ],
       "size": [
-        690,
+        640,
         290
       ],
       "flags": {},
@@ -241,13 +241,13 @@
   ],
   "groups": [
     {
-      "id": 3,
+      "id": 4,
       "title": "DOCUMENTATION",
       "bounding": [
-        -420,
-        110,
+        -370,
+        70,
         1360,
-        1680
+        1820
       ],
       "color": "#3f789e",
       "flags": {}
@@ -259,9 +259,9 @@
         "id": "22148af9-ea62-4d0e-8039-cfdf1081fa66",
         "version": 1,
         "state": {
-          "lastGroupId": 3,
-          "lastNodeId": 81,
-          "lastLinkId": 165,
+          "lastGroupId": 5,
+          "lastNodeId": 85,
+          "lastLinkId": 181,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -270,17 +270,17 @@
         "inputNode": {
           "id": -10,
           "bounding": [
-            -960,
-            -410,
-            152.765625,
+            -1089.6208287493341,
+            -575.268163218766,
+            147.603515625,
             248
           ]
         },
         "outputNode": {
           "id": -20,
           "bounding": [
-            3043.1419201737526,
-            -183.10909791688766,
+            3710.379171250666,
+            -235.26816321876595,
             128,
             68
           ]
@@ -294,8 +294,8 @@
               150
             ],
             "pos": [
-              -831.234375,
-              -386
+              -966.0173131243341,
+              -551.268163218766
             ]
           },
           {
@@ -309,8 +309,8 @@
             ],
             "label": "style",
             "pos": [
-              -831.234375,
-              -366
+              -966.0173131243341,
+              -531.268163218766
             ]
           },
           {
@@ -323,8 +323,8 @@
               159
             ],
             "pos": [
-              -831.234375,
-              -346
+              -966.0173131243341,
+              -511.26816321876595
             ]
           },
           {
@@ -335,21 +335,34 @@
               153
             ],
             "pos": [
-              -831.234375,
-              -326
+              -966.0173131243341,
+              -491.26816321876595
             ]
           },
           {
-            "id": "4ead56e6-369c-42c7-8b54-b9bf657d7207",
-            "name": "effect_2_tweak",
+            "id": "c4b359d0-3313-4121-9a01-bc20ba1fc3ec",
+            "name": "filter4_tweak",
             "type": "FLOAT",
             "linkIds": [
-              163
+              178
+            ],
+            "label": "brightness",
+            "pos": [
+              -966.0173131243341,
+              -471.26816321876595
+            ]
+          },
+          {
+            "id": "778451f5-ae92-43b8-8a77-0498ae6bbb4c",
+            "name": "filter1_tweak",
+            "type": "FLOAT",
+            "linkIds": [
+              175
             ],
             "label": "color",
             "pos": [
-              -831.234375,
-              -306
+              -966.0173131243341,
+              -451.26816321876595
             ]
           },
           {
@@ -360,8 +373,8 @@
               35
             ],
             "pos": [
-              -831.234375,
-              -286
+              -966.0173131243341,
+              -431.26816321876595
             ]
           },
           {
@@ -373,8 +386,8 @@
             ],
             "label": "zimage_turbo_file",
             "pos": [
-              -831.234375,
-              -266
+              -966.0173131243341,
+              -411.26816321876595
             ]
           },
           {
@@ -386,8 +399,8 @@
             ],
             "label": "qwen3_4b_file",
             "pos": [
-              -831.234375,
-              -246
+              -966.0173131243341,
+              -391.26816321876595
             ]
           },
           {
@@ -399,21 +412,8 @@
             ],
             "label": "vae_file",
             "pos": [
-              -831.234375,
-              -226
-            ]
-          },
-          {
-            "id": "29a97490-26df-4cdc-81b0-ed1bcd2bdd6d",
-            "name": "enable_label",
-            "type": "BOOLEAN",
-            "linkIds": [
-              142
-            ],
-            "label": "imprint_style_label",
-            "pos": [
-              -831.234375,
-              -206
+              -966.0173131243341,
+              -371.26816321876595
             ]
           }
         ],
@@ -426,8 +426,8 @@
               144
             ],
             "pos": [
-              3067.1419201737526,
-              -159.10909791688766
+              3734.379171250666,
+              -211.26816321876595
             ]
           }
         ],
@@ -445,7 +445,7 @@
               140
             ],
             "flags": {},
-            "order": 5,
+            "order": 6,
             "mode": 0,
             "inputs": [
               {
@@ -468,6 +468,7 @@
                 ]
               }
             ],
+            "title": "- Load VAE",
             "properties": {
               "Node name for S&R": "VAELoader"
             },
@@ -493,7 +494,7 @@
               160
             ],
             "flags": {},
-            "order": 4,
+            "order": 5,
             "mode": 0,
             "inputs": [
               {
@@ -516,6 +517,7 @@
                 ]
               }
             ],
+            "title": "⚗️🔬| - Load Z-Image Model (safetensors / gguf)",
             "properties": {
               "Node name for S&R": "LoadZImageModel //ZImagePowerNodes"
             },
@@ -543,7 +545,7 @@
               170
             ],
             "flags": {},
-            "order": 3,
+            "order": 4,
             "mode": 0,
             "inputs": [
               {
@@ -566,6 +568,7 @@
                 ]
               }
             ],
+            "title": "⚗️🔬| - Load Qwen3-4B Model (safetensors / gguf)",
             "properties": {
               "Node name for S&R": "LoadQwen34bModel //ZImagePowerNodes"
             },
@@ -595,7 +598,7 @@
               100
             ],
             "flags": {},
-            "order": 8,
+            "order": 9,
             "mode": 0,
             "inputs": [
               {
@@ -629,15 +632,15 @@
             "id": 7,
             "type": "EmptyZImageLatentImage //ZImagePowerNodes",
             "pos": [
-              220,
-              -630
+              550,
+              -1020
             ],
             "size": [
               340,
               200
             ],
             "flags": {},
-            "order": 6,
+            "order": 7,
             "mode": 0,
             "inputs": [
               {
@@ -680,15 +683,15 @@
             "id": 9,
             "type": "AdvancedVAEDecoderX21 //ZImagePowerNodes",
             "pos": [
-              1960,
-              -170
+              2160,
+              -1020
             ],
             "size": [
               340,
               140
             ],
             "flags": {},
-            "order": 7,
+            "order": 8,
             "mode": 0,
             "inputs": [
               {
@@ -710,7 +713,7 @@
                 "name": "IMAGE",
                 "type": "IMAGE",
                 "links": [
-                  164
+                  163
                 ]
               }
             ],
@@ -724,21 +727,23 @@
             "widgets_values_named": {
               "allow_extended_range": true,
               "low_vram_mode": false
-            }
+            },
+            "color": "#323",
+            "bgcolor": "#535"
           },
           {
             "id": 23,
             "type": "Reroute",
             "pos": [
-              430,
-              810
+              610,
+              820
             ],
             "size": [
               75,
               26
             ],
             "flags": {},
-            "order": 9,
+            "order": 10,
             "mode": 0,
             "inputs": [
               {
@@ -765,15 +770,15 @@
             "id": 24,
             "type": "Reroute",
             "pos": [
-              1670,
-              820
+              2040,
+              830
             ],
             "size": [
               75,
               26
             ],
             "flags": {},
-            "order": 10,
+            "order": 11,
             "mode": 0,
             "inputs": [
               {
@@ -800,15 +805,15 @@
             "id": 37,
             "type": "Reroute",
             "pos": [
-              460,
-              470
+              640,
+              480
             ],
             "size": [
               75,
               26
             ],
             "flags": {},
-            "order": 11,
+            "order": 12,
             "mode": 0,
             "inputs": [
               {
@@ -837,15 +842,15 @@
             "id": 54,
             "type": "StylePromptEncoderX22Advanced //ZImagePowerNodes",
             "pos": [
-              710,
-              480
+              890,
+              490
             ],
             "size": [
               440,
               270
             ],
             "flags": {},
-            "order": 12,
+            "order": 13,
             "mode": 0,
             "inputs": [
               {
@@ -942,8 +947,8 @@
             "id": 69,
             "type": "PrimitiveStringMultiline",
             "pos": [
-              -300,
-              1060
+              -1060,
+              1270
             ],
             "size": [
               820,
@@ -980,8 +985,8 @@
             "id": 70,
             "type": "PrimitiveStringMultiline",
             "pos": [
-              530,
-              1060
+              -230,
+              1270
             ],
             "size": [
               820,
@@ -1018,7 +1023,7 @@
             "id": 71,
             "type": "PreviewAny",
             "pos": [
-              2440,
+              2600,
               830
             ],
             "size": [
@@ -1026,7 +1031,7 @@
               390
             ],
             "flags": {},
-            "order": 13,
+            "order": 14,
             "mode": 0,
             "inputs": [
               {
@@ -1055,7 +1060,7 @@
             "id": 72,
             "type": "PreviewAny",
             "pos": [
-              2440,
+              2600,
               400
             ],
             "size": [
@@ -1063,7 +1068,7 @@
               390
             ],
             "flags": {},
-            "order": 14,
+            "order": 15,
             "mode": 0,
             "inputs": [
               {
@@ -1092,15 +1097,15 @@
             "id": 74,
             "type": "StylePromptEncoderX22Advanced //ZImagePowerNodes",
             "pos": [
-              1170,
-              480
+              1350,
+              490
             ],
             "size": [
               440,
               270
             ],
             "flags": {},
-            "order": 15,
+            "order": 16,
             "mode": 0,
             "inputs": [
               {
@@ -1155,7 +1160,9 @@
                 "localized_name": "PROMPT",
                 "name": "PROMPT",
                 "type": "STRING",
-                "links": []
+                "links": [
+                  180
+                ]
               },
               {
                 "localized_name": "style_name",
@@ -1195,8 +1202,8 @@
             "id": 75,
             "type": "PrimitiveStringMultiline",
             "pos": [
-              1360,
-              1060
+              600,
+              1270
             ],
             "size": [
               820,
@@ -1233,31 +1240,22 @@
             "id": 77,
             "type": "ImageLabeler2 //ZImagePowerNodes",
             "pos": [
-              2660,
-              -170
+              3260,
+              -220
             ],
             "size": [
               270,
               330
             ],
             "flags": {},
-            "order": 16,
+            "order": 17,
             "mode": 0,
             "inputs": [
               {
                 "localized_name": "image",
                 "name": "image",
                 "type": "IMAGE",
-                "link": 165
-              },
-              {
-                "localized_name": "enable_label",
-                "name": "enable_label",
-                "type": "BOOLEAN",
-                "widget": {
-                  "name": "enable_label"
-                },
-                "link": 142
+                "link": 164
               },
               {
                 "localized_name": "text",
@@ -1315,15 +1313,15 @@
             "id": 78,
             "type": "ZSamplerTurboX21 //ZImagePowerNodes",
             "pos": [
-              1490,
-              -630
+              1680,
+              -1020
             ],
             "size": [
-              310,
-              420
+              320,
+              640
             ],
             "flags": {},
-            "order": 17,
+            "order": 18,
             "mode": 0,
             "inputs": [
               {
@@ -1421,15 +1419,15 @@
             "id": 79,
             "type": "StylePromptEncoderX22Advanced //ZImagePowerNodes",
             "pos": [
-              710,
-              160
+              890,
+              170
             ],
             "size": [
               440,
               270
             ],
             "flags": {},
-            "order": 18,
+            "order": 19,
             "mode": 0,
             "inputs": [
               {
@@ -1525,34 +1523,50 @@
             }
           },
           {
-            "id": 80,
-            "type": "ImageFilter //ZImagePowerNodes",
+            "id": 83,
+            "type": "ImageFilterStackLAB //ZImagePowerNodes",
             "pos": [
-              2340,
-              -170
+              2570,
+              -1020
             ],
             "size": [
               290,
-              400
+              420
             ],
             "flags": {},
-            "order": 19,
+            "order": 20,
             "mode": 0,
             "inputs": [
               {
-                "localized_name": "images",
-                "name": "images",
+                "localized_name": "image",
+                "name": "image",
                 "type": "IMAGE",
-                "link": 164
+                "link": 163
               },
               {
-                "localized_name": "effect_2_tweak",
-                "name": "effect_2_tweak",
+                "localized_name": "settings",
+                "name": "settings",
+                "shape": 7,
+                "type": "STRING",
+                "link": 181
+              },
+              {
+                "localized_name": "filter2_tweak",
+                "name": "filter2_tweak",
                 "type": "FLOAT",
                 "widget": {
-                  "name": "effect_2_tweak"
+                  "name": "filter2_tweak"
                 },
-                "link": 163
+                "link": 175
+              },
+              {
+                "localized_name": "filter5_tweak",
+                "name": "filter5_tweak",
+                "type": "FLOAT",
+                "widget": {
+                  "name": "filter5_tweak"
+                },
+                "link": 178
               }
             ],
             "outputs": [
@@ -1561,38 +1575,127 @@
                 "name": "IMAGE",
                 "type": "IMAGE",
                 "links": [
-                  165
+                  164
                 ]
               }
             ],
             "properties": {
-              "Node name for S&R": "ImageFilter //ZImagePowerNodes"
+              "Node name for S&R": "ImageFilterStackLAB //ZImagePowerNodes"
             },
             "widgets_values": [
               true,
+              null,
               true,
               null,
-              "zgamma",
-              0.2,
+              "contrast_z",
+              0.1,
               null,
               "color",
               0,
               null,
               "color_twist",
-              -0.2
+              0,
+              null,
+              "chroma_blur",
+              0.3,
+              null,
+              "brightness_curve",
+              0
             ],
             "widgets_values_named": {
               "enable_auto_contrast": true,
-              "enable_effects": true,
-              "divider1": null,
-              "effect_1": "zgamma",
-              "effect_1_tweak": 0.2,
-              "divider2": null,
-              "effect_2": "color",
-              "effect_2_tweak": 0,
-              "divider3": null,
-              "effect_3": "color_twist",
-              "effect_3_tweak": -0.2
+              "divider": null,
+              "enable_filters": true,
+              "spacer1": null,
+              "filter1": "contrast_z",
+              "filter1_tweak": 0.1,
+              "spacer2": null,
+              "filter2": "color",
+              "filter2_tweak": 0,
+              "spacer3": null,
+              "filter3": "color_twist",
+              "filter3_tweak": 0,
+              "spacer4": null,
+              "filter4": "chroma_blur",
+              "filter4_tweak": 0.3,
+              "spacer5": null,
+              "filter5": "brightness_curve",
+              "filter5_tweak": 0
+            },
+            "color": "#323",
+            "bgcolor": "#535"
+          },
+          {
+            "id": 84,
+            "type": "PreviewAny",
+            "pos": [
+              2600,
+              1260
+            ],
+            "size": [
+              940,
+              390
+            ],
+            "flags": {},
+            "order": 21,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "source",
+                "name": "source",
+                "type": "*",
+                "link": 180
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "STRING",
+                "name": "STRING",
+                "type": "STRING",
+                "links": []
+              }
+            ],
+            "title": "Preview LAYOUT prompt",
+            "properties": {
+              "Node name for S&R": "PreviewAny"
+            },
+            "widgets_values": [],
+            "widgets_values_named": {}
+          },
+          {
+            "id": 85,
+            "type": "PrimitiveStringMultiline",
+            "pos": [
+              1900,
+              -1390
+            ],
+            "size": [
+              490,
+              230
+            ],
+            "flags": {},
+            "order": 3,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [
+              {
+                "localized_name": "STRING",
+                "name": "STRING",
+                "type": "STRING",
+                "links": [
+                  181
+                ]
+              }
+            ],
+            "title": "Image Filter Stack - SETTINGS",
+            "properties": {
+              "Node name for S&R": "PrimitiveStringMultiline"
+            },
+            "widgets_values": [
+              "{#FILTER-SETTINGS}"
+            ],
+            "widgets_values_named": {
+              "value": "{#FILTER-SETTINGS}"
             }
           }
         ],
@@ -1606,19 +1709,31 @@
               610,
               650
             ],
-            "color": "#3f789e",
+            "color": "#A88",
             "flags": {}
           },
           {
             "id": 2,
             "title": "Styles *3",
             "bounding": [
-              -320,
-              970,
+              -1080,
+              1180,
               2530,
               1180
             ],
             "color": "#3f789e",
+            "flags": {}
+          },
+          {
+            "id": 5,
+            "title": "PROMPTS",
+            "bounding": [
+              2580,
+              320,
+              980,
+              1360
+            ],
+            "color": "#b06634",
             "flags": {}
           }
         ],
@@ -1704,22 +1819,6 @@
             "type": "CLIP"
           },
           {
-            "id": 127,
-            "origin_id": -10,
-            "origin_slot": 1,
-            "target_id": 54,
-            "target_slot": 3,
-            "type": "ZIPN_STYLE"
-          },
-          {
-            "id": 138,
-            "origin_id": -10,
-            "origin_slot": 1,
-            "target_id": 74,
-            "target_slot": 3,
-            "type": "ZIPN_STYLE"
-          },
-          {
             "id": 144,
             "origin_id": 77,
             "origin_slot": 0,
@@ -1760,14 +1859,6 @@
             "type": "CONDITIONING"
           },
           {
-            "id": 150,
-            "origin_id": -10,
-            "origin_slot": 0,
-            "target_id": 78,
-            "target_slot": 5,
-            "type": "INT"
-          },
-          {
             "id": 155,
             "origin_id": 78,
             "origin_slot": 0,
@@ -1792,14 +1883,6 @@
             "type": "STRING"
           },
           {
-            "id": 158,
-            "origin_id": -10,
-            "origin_slot": 1,
-            "target_id": 79,
-            "target_slot": 3,
-            "type": "ZIPN_STYLE"
-          },
-          {
             "id": 160,
             "origin_id": 79,
             "origin_slot": 0,
@@ -1816,33 +1899,73 @@
             "type": "STRING"
           },
           {
-            "id": 162,
-            "origin_id": 79,
-            "origin_slot": 2,
-            "target_id": 77,
-            "target_slot": 2,
-            "type": "STRING"
+            "id": 163,
+            "origin_id": 9,
+            "origin_slot": 0,
+            "target_id": 83,
+            "target_slot": 0,
+            "type": "IMAGE"
           },
           {
             "id": 164,
-            "origin_id": 9,
-            "origin_slot": 0,
-            "target_id": 80,
-            "target_slot": 0,
-            "type": "IMAGE"
-          },
-          {
-            "id": 165,
-            "origin_id": 80,
+            "origin_id": 83,
             "origin_slot": 0,
             "target_id": 77,
             "target_slot": 0,
             "type": "IMAGE"
+          },
+          {
+            "id": 180,
+            "origin_id": 74,
+            "origin_slot": 1,
+            "target_id": 84,
+            "target_slot": 0,
+            "type": "STRING"
+          },
+          {
+            "id": 181,
+            "origin_id": 85,
+            "origin_slot": 0,
+            "target_id": 83,
+            "target_slot": 1,
+            "type": "STRING"
+          },
+          {
+            "id": 150,
+            "origin_id": -10,
+            "origin_slot": 0,
+            "target_id": 78,
+            "target_slot": 5,
+            "type": "INT"
+          },
+          {
+            "id": 127,
+            "origin_id": -10,
+            "origin_slot": 1,
+            "target_id": 54,
+            "target_slot": 3,
+            "type": "ZIPN_STYLE"
+          },
+          {
+            "id": 138,
+            "origin_id": -10,
+            "origin_slot": 1,
+            "target_id": 74,
+            "target_slot": 3,
+            "type": "ZIPN_STYLE"
+          },
+          {
+            "id": 158,
+            "origin_id": -10,
+            "origin_slot": 1,
+            "target_id": 79,
+            "target_slot": 3,
+            "type": "ZIPN_STYLE"
           },
           {
             "id": 35,
             "origin_id": -10,
-            "origin_slot": 5,
+            "origin_slot": 6,
             "target_id": 7,
             "target_slot": 0,
             "type": "BOOLEAN"
@@ -1850,7 +1973,7 @@
           {
             "id": 52,
             "origin_id": -10,
-            "origin_slot": 6,
+            "origin_slot": 7,
             "target_id": 2,
             "target_slot": 0,
             "type": "COMBO"
@@ -1858,7 +1981,7 @@
           {
             "id": 53,
             "origin_id": -10,
-            "origin_slot": 7,
+            "origin_slot": 8,
             "target_id": 1,
             "target_slot": 0,
             "type": "COMBO"
@@ -1866,18 +1989,10 @@
           {
             "id": 54,
             "origin_id": -10,
-            "origin_slot": 8,
+            "origin_slot": 9,
             "target_id": 3,
             "target_slot": 0,
             "type": "COMBO"
-          },
-          {
-            "id": 142,
-            "origin_id": -10,
-            "origin_slot": 9,
-            "target_id": 77,
-            "target_slot": 1,
-            "type": "BOOLEAN"
           },
           {
             "id": 116,
@@ -1893,6 +2008,14 @@
             "origin_slot": 2,
             "target_id": 74,
             "target_slot": 4,
+            "type": "STRING"
+          },
+          {
+            "id": 162,
+            "origin_id": 79,
+            "origin_slot": 2,
+            "target_id": 77,
+            "target_slot": 1,
             "type": "STRING"
           },
           {
@@ -1912,11 +2035,19 @@
             "type": "STRING"
           },
           {
-            "id": 163,
+            "id": 175,
+            "origin_id": -10,
+            "origin_slot": 5,
+            "target_id": 83,
+            "target_slot": 2,
+            "type": "FLOAT"
+          },
+          {
+            "id": 178,
             "origin_id": -10,
             "origin_slot": 4,
-            "target_id": 80,
-            "target_slot": 1,
+            "target_id": 83,
+            "target_slot": 3,
             "type": "FLOAT"
           }
         ],
@@ -1926,53 +2057,64 @@
   },
   "config": {},
   "extra": {
-    "frontendVersion": "1.57.4",
+    "frontendVersion": "1.59.6",
     "favoritedWidgets": {
       "favorites": []
     },
     "ds": {
-      "scale": 0.8071720622482794,
+      "scale": 0.8431724094244195,
       "offset": [
-        -656.2305445668711,
-        18.48964528039802
+        -764.0457385336632,
+        39.814604334505674
       ]
     },
     "linearData": {
       "inputs": [
         [
-          "166ed953-5a88-4759-82eb-93fca80de826:21:seed",
-          "seed"
+          "635621d8-200e-4d2e-89d0-fe846f9fcacd:21:seed",
+          "seed",
+          {}
         ],
         [
-          "166ed953-5a88-4759-82eb-93fca80de826:21:style_1",
-          "style_1"
+          "635621d8-200e-4d2e-89d0-fe846f9fcacd:21:style_1",
+          "style_1",
+          {}
         ],
         [
-          "166ed953-5a88-4759-82eb-93fca80de826:21:prompt",
-          "prompt"
+          "635621d8-200e-4d2e-89d0-fe846f9fcacd:21:prompt",
+          "prompt",
+          {}
         ],
         [
-          "166ed953-5a88-4759-82eb-93fca80de826:21:turbo_creativity",
-          "turbo_creativity"
+          "635621d8-200e-4d2e-89d0-fe846f9fcacd:21:turbo_creativity",
+          "turbo_creativity",
+          {
+            "description": "Produces original compositions, avoiding the generic AI aesthetic."
+          }
         ],
         [
-          "166ed953-5a88-4759-82eb-93fca80de826:21:effect_2_tweak",
-          "effect_2_tweak"
+          "635621d8-200e-4d2e-89d0-fe846f9fcacd:21:filter4_tweak",
+          "filter4_tweak"
         ],
         [
-          "166ed953-5a88-4759-82eb-93fca80de826:21:orientation",
+          "635621d8-200e-4d2e-89d0-fe846f9fcacd:21:filter1_tweak",
+          "filter1_tweak",
+          {}
+        ],
+        [
+          "635621d8-200e-4d2e-89d0-fe846f9fcacd:21:orientation",
           "orientation"
         ],
         [
-          "166ed953-5a88-4759-82eb-93fca80de826:21:checkpoint",
+          "635621d8-200e-4d2e-89d0-fe846f9fcacd:21:checkpoint",
           "checkpoint"
         ],
         [
-          "166ed953-5a88-4759-82eb-93fca80de826:21:checkpoint_1",
+          "635621d8-200e-4d2e-89d0-fe846f9fcacd:21:checkpoint_1",
           "checkpoint_1"
         ],
         [
-          "166ed953-5a88-4759-82eb-93fca80de826:21:vae_name",
+          "635621d8-200e-4d2e-89d0-fe846f9fcacd:21:vae_name",
           "vae_name"
         ]
       ],
