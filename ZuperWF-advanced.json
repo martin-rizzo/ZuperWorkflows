@@ -674,8 +674,16 @@
                                 ]
                             }
                         ],
+                        "title": "- Load VAE",
                         "properties": {
-                            "Node name for S&R": "VAELoader"
+                            "Node name for S&R": "VAELoader",
+                            "models": [
+                                {
+                                    "name": "Z-Image_half_natural_vae.safetensors",
+                                    "url": "https://huggingface.co/easygoing0114/Z-Image_clear_vae/resolve/main/Z-Image_half_natural_vae.safetensors",
+                                    "directory": "vae"
+                                }
+                            ]
                         },
                         "widgets_values": [
                             "Z-Image_half_natural_vae.safetensors"
@@ -722,8 +730,16 @@
                                 ]
                             }
                         ],
+                        "title": "⚗️🔬| - Load Z-Image Model (safetensors / gguf)",
                         "properties": {
-                            "Node name for S&R": "LoadZImageModel //ZImagePowerNodes"
+                            "Node name for S&R": "LoadZImageModel //ZImagePowerNodes",
+                            "models": [
+                                {
+                                    "name": "z_image_turbo_int8_convrot_bf16emixed.safetensors",
+                                    "url": "https://huggingface.co/martin-rizzo/Z-Image-Turbo-INT8-ConvRot-ComfyUI/resolve/main/z_image_turbo_int8_convrot_bf16emixed.safetensors",
+                                    "directory": "diffusion_models"
+                                }
+                            ]
                         },
                         "widgets_values": [
                             "z_image_turbo_int8_convrot_bf16emixed.safetensors",
@@ -772,8 +788,16 @@
                                 ]
                             }
                         ],
+                        "title": "⚗️🔬| - Load Qwen3-4B Model (safetensors / gguf)",
                         "properties": {
-                            "Node name for S&R": "LoadQwen34bModel //ZImagePowerNodes"
+                            "Node name for S&R": "LoadQwen34bModel //ZImagePowerNodes",
+                            "models": [
+                                {
+                                    "name": "qwen3-4b_int8_convrot_fp16emixed.safetensors",
+                                    "url": "https://huggingface.co/martin-rizzo/Qwen3-4B-INT8-ConvRot-ComfyUI/resolve/main/qwen3-4b_int8_convrot_fp16emixed.safetensors",
+                                    "directory": "text_encoders"
+                                }
+                            ]
                         },
                         "widgets_values": [
                             "qwen3-4b_int8_convrot_fp16emixed.safetensors",
@@ -2421,7 +2445,7 @@
             "scale": 0.6334879109124113,
             "offset": [
                 -292.4410349473629,
-                56.4997298708167
+                56.49972987081671
             ]
         }
     },

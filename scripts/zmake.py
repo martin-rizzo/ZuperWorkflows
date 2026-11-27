@@ -100,6 +100,31 @@ def remove_trailing_empty_lines(text_lines: list[str]):
     while text_lines and not text_lines[-1].strip():
         text_lines.pop()
 
+#--------------------------------- HELPERS ---------------------------------#
+
+def unquote(value: str) -> str:
+    if len(value) >= 2 and value[0] == value[-1] and value[0] in ('"', "'"):
+        return value[1:-1]
+    return value
+
+
+def parse_key_value(text: list[str] | str) -> dict[str, str]:
+    lines = text.splitlines() if isinstance(text, str) else text
+
+    result: dict[str, str] = {}
+    for line in lines:
+        stripped = line.strip()
+        if stripped and not stripped.startswith("#"):
+            key, equal_sign, value = stripped.partition("=")
+            key, value = key.strip(), value.strip()
+            if key and equal_sign and value:
+                result[key] = unquote(value)
+    return result
+
+def get_node_name(node: dict) -> str:
+    name = node.get("title") or node.get("type") if isinstance(node,dict) else None
+    return name.strip() if isinstance(name,str) else "???"
+
 #----------------------------- RELATIVE PATHS ------------------------------#
 
 _reference_dir: Path = Path(__file__).resolve().parent
@@ -411,11 +436,23 @@ def find_comfyui_nodes(workflow: dict, title: str) -> list[dict]:
 
     found_nodes.extend( _find_comfyui_nodes(nodes, title=title) )
 
-    # find subgraphs whose names match the 'title' pattern,
-    # and use their IDs as the node type for searching
+    # buscar nodos dentro de cada subgraph
+    definitions = workflow.get("definitions")  if isinstance(workflow   ,dict) else None
+    subgraphs   = definitions.get("subgraphs") if isinstance(definitions,dict) else None
+    if isinstance(subgraphs, list):
+        for subgraph in subgraphs:
+            subgraph_nodes = subgraph.get("nodes") if isinstance(subgraph,dict) else None
+            if isinstance(subgraph_nodes,list):
+                found_nodes.extend( _find_comfyui_nodes(subgraph_nodes, title=title) )
+
+    # buscar el nodos que representan la imagen externo de algun subgraph cuyo nombre coincida con title
+    # para esto:
+    #  - find subgraphs whose names match the 'title' pattern y extraer sus IDs
+    #  - buscar nodos cuyo type coincida con los IDS extraidos de los subgraphs
     subgraph_ids = find_subgraph_ids(workflow, name=title)
     for subgraph_id in subgraph_ids:
         found_nodes.extend( _find_comfyui_nodes(nodes, type=subgraph_id) )
+
 
     return found_nodes
 
@@ -475,7 +512,32 @@ def set_comfyui_node_param(node: dict, param: str, value: Any) -> bool:
     return False
 
 
-def adjust_comfyui_nodes(workflow: dict, adjustments: dict[str, dict[str,str]]) -> None:
+def add_to_comfynode_property_list(node: dict, proplist_name: str, element_to_add: Any) -> bool:
+    if not isinstance(node, dict) or element_to_add is None:
+        return False
+
+    node_name = node.get("title") or node.get("type", "???")
+
+    properties: dict = node.get("properties") or {}
+    if not isinstance(properties, dict):
+        return False
+
+    if proplist_name in properties and not isinstance(properties[proplist_name], list):
+        warning(f"Property '{proplist_name}' exists but is not a list. Node: '{node_name}'. La property no sera modificada.")
+        return False
+
+    if proplist_name not in properties:
+        properties[proplist_name] = []
+
+    properties[proplist_name].append(element_to_add)
+    return True
+
+
+def adjust_comfyui_nodes(workflow   : dict,
+                         adjustments: dict[str, dict[str,str]],
+                         attachments: dict[str, str],
+                         var_solver : VarSolver,
+                         ) -> None:
     """
     Adjusts parameters of ComfyUI nodes in a workflow based on the provided adjustments.
 
@@ -494,15 +556,24 @@ def adjust_comfyui_nodes(workflow: dict, adjustments: dict[str, dict[str,str]]) 
     Returns:
         None. Adjustments are applied in-place to the workflow dictionary.
     """
-    for node_title, node_params_to_adjust in adjustments.items():
-        nodes = find_comfyui_nodes(workflow, node_title)
+    for node_name, node_params_to_adjust in adjustments.items():
+        nodes = find_comfyui_nodes(workflow, node_name)
         for node in nodes:
             for param, value in node_params_to_adjust.items():
-                worked = set_comfyui_node_param(node, param=param, value=value)
-                if worked:
-                    node_title = node.get("title") or node.get("type")
-                    if isinstance(node_title,str):
-                        print(f"Node '{node_title.strip()}' adjusted ({param} = {value})")
+                if set_comfyui_node_param(node, param=param, value=value):
+                    print(f"Node '{get_node_name(node)}' adjusted ({param} = {value})")
+
+    for node_name, model_location in attachments.items():
+        model_location     : str           = var_solver.solve(model_location)
+        model_location_dict: dict[str,str] = parse_key_value(model_location)
+        if {"name", "url", "directory"} != model_location_dict.keys():
+            warning("ATTACH_MODEL_TO_NODE requires model location especificada con 'name', 'url', and 'directory'")
+            continue
+
+        nodes = find_comfyui_nodes(workflow, node_name)
+        for node in nodes:
+            if add_to_comfynode_property_list(node, proplist_name="models", element_to_add=model_location_dict):
+                print(f'Node "{get_node_name(node)}" attached with model "{model_location_dict.get("name","???")}"')
 
 
 #----------------------------- CLASS VarSolver -----------------------------#
@@ -688,6 +759,7 @@ class ZMakeParser:
         self.global_vars          : dict[str, str]           = {}
         self.local_vars           : dict[str, str]           = {}
         self.local_nodes_to_adjust: dict[str, dict[str,str]] = {}
+        self.local_nodes_to_attach: dict[str, str]           = {}
 
 
     @staticmethod
@@ -800,7 +872,11 @@ class ZMakeParser:
         elif file_type == "json":
             raw_data      = json.loads(template)
             resolved_data = var_solver.solve(raw_data)
-            adjust_comfyui_nodes(resolved_data, adjustments=self.local_nodes_to_adjust)
+            adjust_comfyui_nodes(resolved_data,
+                                 adjustments = self.local_nodes_to_adjust,
+                                 attachments = self.local_nodes_to_attach,
+                                 var_solver  = var_solver,
+                                 )
             with open(dest_path, 'w', encoding='utf-8') as f:
                 json.dump( resolved_data, f, indent=4, ensure_ascii=False )
         else:
@@ -853,16 +929,17 @@ class ZMakeParser:
             self.load_var(var_name, paths_slices, persistent=False )
 
         elif instruction == "ADJUST_NODE":
-            node_title  : str = params[0]
-            node_params : dict[str,str] = {}
-            for line in content:
-                if "=" in line:
-                    key, value = line.split("=", 1)
-                    key, value = key.strip(), value.strip()
-                    if key and value:
-                        node_params[key] = value
-            if node_title and node_params:
-                self.local_nodes_to_adjust[node_title] = node_params
+            node_name   : str = params[0]
+            node_params : dict[str,str] = parse_key_value(content)
+            if node_name and node_params:
+                self.local_nodes_to_adjust[node_name] = node_params
+
+        elif instruction == "ATTACH_MODEL_TO_NODE":
+            node_name: str = params[0]
+            if not node_name:
+                warning("Missing node name for ATTACH_MODEL")
+                return
+            self.local_nodes_to_attach[node_name] = "\n".join(content)
 
         elif instruction == "MAKE":
             # at the start of MAKE, load variables into the solver
@@ -883,6 +960,11 @@ class ZMakeParser:
             # at the end of MAKE, clear the local variables
             self.local_vars = {}
             self.local_nodes_to_adjust = {}
+            self.local_nodes_to_attach = {}
+
+        else:
+            # TODO: mostrar un mensaje de instruccion desconocida
+            warning("??")
 
 
     def execute_lines(self,

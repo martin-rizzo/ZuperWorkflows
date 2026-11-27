@@ -674,6 +674,7 @@
                 ]
               }
             ],
+            "title": "- Load VAE",
             "properties": {
               "Node name for S&R": "VAELoader"
             },
@@ -722,6 +723,7 @@
                 ]
               }
             ],
+            "title": "⚗️🔬| - Load Z-Image Model (safetensors / gguf)",
             "properties": {
               "Node name for S&R": "LoadZImageModel //ZImagePowerNodes"
             },
@@ -772,6 +774,7 @@
                 ]
               }
             ],
+            "title": "⚗️🔬| - Load Qwen3-4B Model (safetensors / gguf)",
             "properties": {
               "Node name for S&R": "LoadQwen34bModel //ZImagePowerNodes"
             },
@@ -2421,7 +2424,7 @@
       "scale": 0.6334879109124113,
       "offset": [
         -292.4410349473629,
-        56.4997298708167
+        56.49972987081671
       ]
     }
   },

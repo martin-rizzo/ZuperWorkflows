@@ -1,0 +1,28 @@
+{-----COMMENT
+This file defines the 3 models used by the workflows. It serves as a base
+configuration so that ComfyUI can automatically download them from the
+internet if the user does not have them locally.
+
+It follows the slice format defined within the "{-----" and "-----}" delimiters.
+Inside, the configuration is divided into three slices, separated by lines of
+six hyphens ("------").
+
+These slices correspond to each model:
+  - The first slice contains the diffusion model source
+  - The second slice contains the text encoder source
+  - The third slice contains the VAE source
+
+-----}
+{-----
+name      = z_image_turbo_int8_convrot_bf16emixed.safetensors
+url       = https://huggingface.co/martin-rizzo/Z-Image-Turbo-INT8-ConvRot-ComfyUI/resolve/main/z_image_turbo_int8_convrot_bf16emixed.safetensors
+directory = diffusion_models
+------
+name      = qwen3-4b_int8_convrot_fp16emixed.safetensors
+url       = https://huggingface.co/martin-rizzo/Qwen3-4B-INT8-ConvRot-ComfyUI/resolve/main/qwen3-4b_int8_convrot_fp16emixed.safetensors
+directory = text_encoders
+------
+name      = Z-Image_half_natural_vae.safetensors
+url       = https://huggingface.co/easygoing0114/Z-Image_clear_vae/resolve/main/Z-Image_half_natural_vae.safetensors
+directory = vae
+-----}

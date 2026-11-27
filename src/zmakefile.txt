@@ -9,6 +9,15 @@ texts/about.md
 >::LOAD! #FILTER-SETTINGS
 texts/filtersettings.txt
 
+>::LOAD! #Z-IMAGE-TURBO-MODEL
+texts/models.sliced.txt[#1]
+
+>::LOAD! #QWEN3-4B-MODEL
+texts/models.sliced.txt[#2]
+
+>::LOAD! #VAE-MODEL
+texts/models.sliced.txt[#3]
+
 >::LOAD! #STYLES-CORE
 texts/sliceshead.txt[#1]
 styles-experimental.sty.txt[#1]
@@ -56,6 +65,15 @@ texts/readme-advanced.md
 >::SET #WORKFLOW_DESCRIPTION
 {#ADVANCED_WORKFLOW_DESCRIPTION}
 
+>::ATTACH_MODEL_TO_NODE "*Load Z-Image*"
+{#Z-IMAGE-TURBO-MODEL}
+
+>::ATTACH_MODEL_TO_NODE "*Load Qwen3-4B*"
+{#QWEN3-4B-MODEL}
+
+>::ATTACH_MODEL_TO_NODE "*Load VAE*"
+{#VAE-MODEL}
+
 >::ADJUST_NODE "🦸 Zuper*"
 seed   = 2
 style  = Flash Photo
@@ -78,11 +96,19 @@ texts/readme-advanced.md
 >::SET #WORKFLOW_DESCRIPTION
 {#ADVANCED_WORKFLOW_DESCRIPTION}
 
+>::ATTACH_MODEL_TO_NODE "*Load Z-Image*"
+{#Z-IMAGE-TURBO-MODEL}
+
+>::ATTACH_MODEL_TO_NODE "*Load Qwen3-4B*"
+{#QWEN3-4B-MODEL}
+
+>::ATTACH_MODEL_TO_NODE "*Load VAE*"
+{#VAE-MODEL}
+
 >::ADJUST_NODE "🦸 Zuper*"
 seed   = 2
 style  = iPhone Photo
 prompt = A woman with long hair styled in two intricate braids and loose bangs, wearing a structured blouse tied at the neck with a decorative knot, a fitted corset beneath, and a flowing skirt. She wears metal-framed goggles perched on her forehead. A small beaker filled with shimmering fluid rests in her right hand. Her facial expression subtly suggests a restrained smirk—one that carries both playful confidence and a hint of dry amusement, as if acknowledging an unspoken observation. She stands before a cluttered table holding papers, a mortar, and various small items. Behind her, a windowsill holds shelves lined with bottles and potted plants, while a large, framed window with a stone sill fills the background with ambient light.
-color  = -0.0
 
 >::MAKE
 {#PWD}/ZuperAPP-advanced.json : workflows/ZuperAPP-advanced.template.json
@@ -100,6 +126,15 @@ texts/readme-basic.md
 
 >::SET #WORKFLOW_DESCRIPTION
 {#BASIC_WORKFLOW_DESCRIPTION}
+
+>::ATTACH_MODEL_TO_NODE "*Load Z-Image*"
+{#Z-IMAGE-TURBO-MODEL}
+
+>::ATTACH_MODEL_TO_NODE "*Load Qwen3-4B*"
+{#QWEN3-4B-MODEL}
+
+>::ATTACH_MODEL_TO_NODE "*Load VAE*"
+{#VAE-MODEL}
 
 >::ADJUST_NODE "🦸 Zuper*"
 seed   = 2
@@ -122,6 +157,15 @@ texts/readme-basic.md
 
 >::SET #WORKFLOW_DESCRIPTION
 {#BASIC_WORKFLOW_DESCRIPTION}
+
+>::ATTACH_MODEL_TO_NODE "*Load Z-Image*"
+{#Z-IMAGE-TURBO-MODEL}
+
+>::ATTACH_MODEL_TO_NODE "*Load Qwen3-4B*"
+{#QWEN3-4B-MODEL}
+
+>::ATTACH_MODEL_TO_NODE "*Load VAE*"
+{#VAE-MODEL}
 
 >::ADJUST_NODE "🦸 Zuper*"
 seed   = 1
