@@ -79,4 +79,3 @@ __vae_file__
 
 __imprint_style_label__
 * Prints the name of the selected style directly onto the image.
-* Recommended to be left disabled by default.
