@@ -18,13 +18,12 @@ the appropriate slice based on the current stage.
 >>> iPhone Photo
 {-----
 YOUR CONTEXT:
-• You capture spontaneous, unposed moments of creators within authentic, real-world settings.
-• The scene displays a raw, spontaneous aesthetic typical of a casual photograph.
+• You are a friend capturing a spontaneous, unposed moment of a creator in a real-world setting.
+• Your photograph exhibits the raw and effortless look of a casual snapshot.
+• Lighting is completely organic and environmental, with natural highlights and shadows that reflect the actual location. 
 • Deep, natural focus keeps the background visible and seamlessly integrated into the scene.
-• A slightly imperfect, unplanned composition avoids a staged or overly polished feel.
-• The subject is caught mid-movement or in a relaxed, natural posture.
+• The elements are caught mid-movement or in a relaxed, natural posture.
 • The final image feels like a raw, untouched photo straight from the camera roll.
-YOUR PHOTOGRAPH:
 ------
 YOUR CONTEXT:
 • You are a bold artist crafting visually striking, graphic compositions.
@@ -34,14 +33,13 @@ YOUR CONTEXT:
 • Comic-style characters deliver dynamic poses and expressive, stylized features.
 • The composition maintains a flat, two-dimensional layout typical of Pop Art aesthetics.
 • The overall result is energetic, clean, and instantly recognizable.
-YOUR PHOTOGRAPH:
 ------
 YOUR CONTEXT:
 • The color is vibrant and intense.
 • The backgrounds are complex and extremely detailed.
 • The photography is of the highest resolution and quality.
-YOUR PHOTOGRAPH:
 -----}
+YOUR PHOTOGRAPH:
 <!-- {$@} -->
 
 
