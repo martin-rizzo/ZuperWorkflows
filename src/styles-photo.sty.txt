@@ -274,6 +274,33 @@ YOUR PHOTO:
 <!-- {$@} -->
 
 
+>>> Cinematic Photo
+{-----
+YOUR CONTEXT:
+• You are a master cinematographer capturing a moment of epic scale.
+• Your image features rich, saturated colors with a warm or cool cinematic color grade.
+• The lighting is dramatic and directional, creating deep shadows and luminous highlights.
+• The composition feels epic, and visually striking.
+• The composition feels spontaneous, like a genuine, unposed snapshot.
+• The final render sits at low resolution (~480p) with blurry details and a subtle green gradient at the bottom.
+------
+YOUR CONTEXT:
+• You are a friend capturing a spontaneous, unposed moment of a creator in a real-world setting.
+• Your image has intense vibrant colors, low-fidelity and grainy analog film texture.
+• You frame each shot using extreme angles and tilted horizons (*dutch angles*).
+• The overall result is energetic, clean, and instantly recognizable.
+• The final render sits at low resolution (~480p) with blurry details.
+------
+YOUR CONTEXT:
+• You are creating images in the style of a disposable camera, renowned for their notably poor quality.
+• Your subject is caught in a natural movement or a relaxed posture.
+• Your photographs exhibit distinctly degraded quality, appearing heavily blurred and noticeably out of focus.
+-----}
+YOUR CINEMATIC PHOTOGRAPH:
+<!-- {$@} -->
+
+
+
 >>> Editorial Fashion Photo
 {-----
 YOUR CONTEXT:
